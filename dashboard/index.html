@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Denial Prevention Simulator</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0f1419;
+    --panel: #171d24;
+    --panel-2: #1e2630;
+    --line: #2a333f;
+    --text: #e6edf3;
+    --muted: #8b98a5;
+    --accent: #4c9aff;
+    --good: #35b77d;
+    --warn: #e0a33e;
+    --bad: #e05c5c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  header {
+    padding: 28px 32px 22px; border-bottom: 1px solid var(--line);
+    background: linear-gradient(180deg, #131a21, var(--bg));
+  }
+  h1 { margin: 0 0 6px; font-size: 22px; letter-spacing: -0.2px; }
+  .sub { color: var(--muted); font-size: 13.5px; max-width: 900px; }
+  .synthetic {
+    display: inline-block; margin-top: 12px; padding: 5px 11px; border-radius: 4px;
+    background: rgba(76,154,255,.12); border: 1px solid rgba(76,154,255,.32);
+    color: #9dc4ff; font-size: 12px; font-weight: 500;
+  }
+  main { padding: 24px 32px 56px; max-width: 1560px; margin: 0 auto; }
+  .kpis {
+    display: grid; gap: 12px; margin-bottom: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(178px, 1fr));
+  }
+  .kpi {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    padding: 15px 16px 14px;
+  }
+  .kpi .label {
+    color: var(--muted); font-size: 11.5px; text-transform: uppercase;
+    letter-spacing: .07em; font-weight: 600; margin-bottom: 9px;
+  }
+  .kpi .value { font-size: 27px; font-weight: 650; letter-spacing: -0.5px; line-height: 1.1; }
+  .kpi .note { color: var(--muted); font-size: 12px; margin-top: 6px; }
+  .kpi.good .value { color: var(--good); }
+  .kpi.warn .value { color: var(--warn); }
+  .kpi.bad  .value { color: var(--bad); }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(12, 1fr); }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    padding: 17px 18px 14px; min-width: 0;
+  }
+  .card.w4 { grid-column: span 4; }
+  .card.w6 { grid-column: span 6; }
+  .card.w8 { grid-column: span 8; }
+  .card.w12 { grid-column: span 12; }
+  @media (max-width: 1080px) { .card.w4, .card.w6, .card.w8 { grid-column: span 12; } }
+  .card h2 { margin: 0 0 3px; font-size: 14.5px; font-weight: 620; }
+  .card .desc { color: var(--muted); font-size: 12.5px; margin: 0 0 14px; }
+  .chart-wrap { position: relative; height: 290px; }
+  .chart-wrap.tall { height: 380px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--line); }
+  th {
+    color: var(--muted); font-size: 11.5px; text-transform: uppercase;
+    letter-spacing: .05em; font-weight: 600; white-space: nowrap;
+  }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tbody tr:hover { background: var(--panel-2); }
+  .scroll { max-height: 430px; overflow-y: auto; }
+  .pill { padding: 2px 8px; border-radius: 10px; font-size: 11.5px; font-weight: 600; }
+  .pill.good { background: rgba(53,183,125,.15); color: var(--good); }
+  .pill.warn { background: rgba(224,163,62,.15); color: var(--warn); }
+  .pill.bad  { background: rgba(224,92,92,.15);  color: var(--bad); }
+  footer {
+    border-top: 1px solid var(--line); padding: 22px 32px 40px;
+    color: var(--muted); font-size: 12.5px; max-width: 1560px; margin: 0 auto;
+  }
+  footer p { margin: 0 0 9px; max-width: 900px; }
+  footer code {
+    background: var(--panel-2); padding: 1.5px 5px; border-radius: 3px;
+    font-size: 12px; color: #b9c6d3;
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Denial Prevention Simulator</h1>
+  <p class="sub">Northbridge Medical Group (fictional) · 11,967 claims · 14.0% denied, $5,419,266 denied. 76.6% of denials trace to a control that could have been checked before submission. This page sizes that opportunity and ranks the work queue that would capture it.</p>
+  <div class="synthetic">Fully synthetic data &middot; no employer, patient or confidential information</div>
+</header>
+<main>
+  <div class="kpis" id="kpis"></div>
+  <div class="grid" id="grid"></div>
+</main>
+<footer>
+  <p><strong>How this page is built.</strong> Every value comes from a SQL query stored in
+  <code>dashboard/dashboard_config.json</code> and run against <code>data/claims.db</code> by
+  <code>src/build_dashboard.py</code>. Nothing is typed in by hand, so the dashboard cannot
+  drift away from the analysis in <code>sql/</code>. Rebuild with
+  <code>python src/load_sqlite.py &amp;&amp; python src/build_dashboard.py</code>.</p>
+  <p><strong>Limitations.</strong> Preventable is defined by a mapping from denial reason to an upstream control, which credits prevention to a control that might have failed anyway. The prevention opportunity is a modelled figure at 100% control effectiveness and is not a savings forecast; real capture depends on staffing and payer behaviour. Risk score weights are judgement, not a fitted model, so the score ranks claims and does not estimate probability. The data is fully synthetic.</p>
+  <p>Source: synthetic data generated by src/generate_data.py. No employer data, patient information, protected health information or confidential business information is used.</p>
+</footer>
+<script>
+const DATA = {"headline":[{"claims":11967,"billed":33452727.0,"denial_pct":14.01,"denied_amt":5419266.0,"preventable_pct":76.7,"opportunity":3587476.0,"recovered":2486303.0,"dq_score":99.61}],"queue_head":[{"queued":900,"at_risk":504650.0,"high_risk":104}],"by_reason":[{"Reason_Description":"No prior authorization on file","Reason_Category":"Authorization","Preventable":"Yes","denials":353,"denied_amt":1842476.0,"opportunity":1473981.0},{"Reason_Description":"Member not eligible on date of service","Reason_Category":"Eligibility","Preventable":"Yes","denials":236,"denied_amt":629716.0,"opportunity":503773.0},{"Reason_Description":"Service not medically necessary per policy","Reason_Category":"Coverage","Preventable":"No","denials":193,"denied_amt":499863.0,"opportunity":0.0},{"Reason_Description":"Medical necessity not documented","Reason_Category":"Documentation","Preventable":"Yes","denials":146,"denied_amt":438188.0,"opportunity":350550.0},{"Reason_Description":"Non-covered benefit under plan","Reason_Category":"Coverage","Preventable":"No","denials":197,"denied_amt":435058.0,"opportunity":0.0},{"Reason_Description":"Duplicate claim","Reason_Category":"Duplicate","Preventable":"Yes","denials":81,"denied_amt":306675.0,"opportunity":245340.0},{"Reason_Description":"Invalid or unbundled code combination","Reason_Category":"Coding","Preventable":"Yes","denials":83,"denied_amt":283139.0,"opportunity":226512.0},{"Reason_Description":"Timely filing limit exceeded","Reason_Category":"Timely Filing","Preventable":"Yes","denials":83,"denied_amt":276112.0,"opportunity":220890.0},{"Reason_Description":"Modifier missing or invalid","Reason_Category":"Coding","Preventable":"Yes","denials":75,"denied_amt":218946.0,"opportunity":175157.0},{"Reason_Description":"Coordination of benefits unresolved","Reason_Category":"Eligibility","Preventable":"Yes","denials":90,"denied_amt":214801.0,"opportunity":171841.0},{"Reason_Description":"Records not submitted with claim","Reason_Category":"Documentation","Preventable":"Yes","denials":72,"denied_amt":156390.0,"opportunity":125112.0},{"Reason_Description":"Authorization expired or mismatched","Reason_Category":"Authorization","Preventable":"Yes","denials":67,"denied_amt":117902.0,"opportunity":94322.0}],"by_category":[{"Reason_Category":"Authorization","denied_amt":1960378.0,"denials":420},{"Reason_Category":"Coverage","denied_amt":934921.0,"denials":390},{"Reason_Category":"Eligibility","denied_amt":844516.0,"denials":326},{"Reason_Category":"Documentation","denied_amt":594578.0,"denials":218},{"Reason_Category":"Coding","denied_amt":502086.0,"denials":158},{"Reason_Category":"Duplicate","denied_amt":306675.0,"denials":81},{"Reason_Category":"Timely Filing","denied_amt":276112.0,"denials":83}],"by_payer":[{"Payer_Name":"Silver Ridge Advantage","Payer_Type":"Medicare Advantage","claims":2104,"denial_pct":15.49,"denied_amt":1273203.0,"days_outstanding":22.8},{"Payer_Name":"Statewide Medicaid MCO","Payer_Type":"Medicaid","claims":2145,"denial_pct":15.24,"denied_amt":1057198.0,"days_outstanding":21.9},{"Payer_Name":"Panhandle Care Partners","Payer_Type":"Medicaid","claims":1169,"denial_pct":15.06,"denied_amt":612351.0,"days_outstanding":22.9},{"Payer_Name":"Cottonwood Mutual","Payer_Type":"Commercial","claims":1415,"denial_pct":13.22,"denied_amt":634085.0,"days_outstanding":22.0},{"Payer_Name":"Trinity Health Plan","Payer_Type":"Commercial","claims":2367,"denial_pct":13.14,"denied_amt":840831.0,"days_outstanding":21.5},{"Payer_Name":"Meridian Select","Payer_Type":"Commercial","claims":789,"denial_pct":12.8,"denied_amt":389064.0,"days_outstanding":22.5},{"Payer_Name":"Brazos Valley Benefits","Payer_Type":"Commercial","claims":1978,"denial_pct":12.54,"denied_amt":612533.0,"days_outstanding":22.2}],"by_service":[{"Service_Line":"Surgery","claims":1543,"denial_pct":17.76,"denied_amt":3468227.0,"opportunity":2293733.0},{"Service_Line":"Orthopedics","claims":847,"denial_pct":15.58,"denied_amt":139567.0,"opportunity":92700.0},{"Service_Line":"Physical Therapy","claims":817,"denial_pct":15.06,"denied_amt":38998.0,"opportunity":22492.0},{"Service_Line":"Cardiology","claims":967,"denial_pct":14.89,"denied_amt":340452.0,"opportunity":199984.0},{"Service_Line":"Imaging","claims":2857,"denial_pct":14.0,"denied_amt":538560.0,"opportunity":333420.0},{"Service_Line":"Oncology","claims":603,"denial_pct":13.93,"denied_amt":802104.0,"opportunity":592417.0},{"Service_Line":"Behavioral Health","claims":973,"denial_pct":12.54,"denied_amt":27608.0,"opportunity":15793.0},{"Service_Line":"Primary Care","claims":2188,"denial_pct":12.2,"denied_amt":50848.0,"opportunity":29669.0},{"Service_Line":"Lab","claims":1172,"denial_pct":11.09,"denied_amt":12902.0,"opportunity":7268.0}],"controls":[{"control":"Authorization missing where required","gaps":1060,"denial_pct_when_failed":36.7},{"control":"Eligibility not verified","gaps":1062,"denial_pct_when_failed":30.1},{"control":"Documentation incomplete","gaps":1076,"denial_pct_when_failed":26.2},{"control":"Coding validation failed","gaps":761,"denial_pct_when_failed":25.6},{"control":"Timely filing at risk","gaps":0,"denial_pct_when_failed":null}],"risk_band":[{"Risk_Band":"Low","claims":8349,"denial_pct":7.82,"denied_amt":1503540.0},{"Risk_Band":"Medium","claims":2315,"denial_pct":22.94,"denied_amt":1467749.0},{"Risk_Band":"High","claims":1303,"denial_pct":37.76,"denied_amt":2447977.0}],"submit_lag":[{"band":"0-3 days","claims":2008,"denial_pct":13.7},{"band":"4-7 days","claims":3910,"denial_pct":12.92},{"band":"8-14 days","claims":3910,"denial_pct":12.74},{"band":"15-30 days","claims":1557,"denial_pct":14.52},{"band":"31+ days","claims":582,"denial_pct":29.55}],"monthly":[{"month":"2026-01","claims":1410,"denial_pct":13.26,"denied_amt":585370.0},{"month":"2026-02","claims":1342,"denial_pct":14.53,"denied_amt":653085.0},{"month":"2026-03","claims":1547,"denial_pct":12.61,"denied_amt":633575.0},{"month":"2026-04","claims":1506,"denial_pct":15.67,"denied_amt":740029.0},{"month":"2026-05","claims":1576,"denial_pct":13.52,"denied_amt":697302.0},{"month":"2026-06","claims":1523,"denial_pct":13.66,"denied_amt":631788.0},{"month":"2026-07","claims":1547,"denial_pct":14.16,"denied_amt":801263.0},{"month":"2026-08","claims":1516,"denial_pct":14.71,"denied_amt":676855.0}],"resub":[{"bucket":"Not resubmitted","denials":585,"denied_amt":1552754.0,"recovered":0.0,"recovery_pct":0.0},{"bucket":"Resubmitted","denials":1091,"denied_amt":3866512.0,"recovered":2486303.0,"recovery_pct":64.3}],"work_queue":[{"Work_Queue":"Authorization Review","denials":420,"denied_amt":1960378.0,"days_outstanding":39.1,"priority_score":37.7},{"Work_Queue":"Payer Relations","denials":390,"denied_amt":934921.0,"days_outstanding":39.5,"priority_score":21.9},{"Work_Queue":"Eligibility Review","denials":326,"denied_amt":844516.0,"days_outstanding":41.1,"priority_score":36.2},{"Work_Queue":"Clinical Documentation","denials":218,"denied_amt":594578.0,"days_outstanding":38.8,"priority_score":35.5},{"Work_Queue":"Coding Review","denials":158,"denied_amt":502086.0,"days_outstanding":38.6,"priority_score":36.1},{"Work_Queue":"Billing Intake","denials":81,"denied_amt":306675.0,"days_outstanding":39.9,"priority_score":36.9},{"Work_Queue":"Billing Escalation","denials":83,"denied_amt":276112.0,"days_outstanding":43.0,"priority_score":37.1}],"rules":[{"Rule_ID":"PR-01","Trigger":"Authorization_Present = No and auth required","Prevention_Action":"Hold claim, verify authorization","Owner":"Authorization team","Linked_Denial_Reason":"AUTH-01"},{"Rule_ID":"PR-02","Trigger":"Eligibility_Verified = No","Prevention_Action":"Verify active coverage for the date of service","Owner":"Billing intake","Linked_Denial_Reason":"ELIG-01"},{"Rule_ID":"PR-03","Trigger":"Documentation_Complete = No","Prevention_Action":"Request missing clinical documentation","Owner":"Clinical documentation","Linked_Denial_Reason":"DOC-01"},{"Rule_ID":"PR-04","Trigger":"Coding_Validation_Passed = No","Prevention_Action":"Route to coding review before submission","Owner":"Coding team","Linked_Denial_Reason":"COD-01"},{"Rule_ID":"PR-05","Trigger":"Days_To_Submit > 20","Prevention_Action":"Expedite submission review","Owner":"Billing supervisor","Linked_Denial_Reason":"TF-01"}],"queue":[{"Claim_ID":"CLM-2026-P00812","Payer_ID":"PAY-03","Service_Line":"Surgery","Claim_Amount":7284.0,"Risk_Band":"High","score":65.0,"Triggered_Rules":"PR-01;PR-03;PR-04","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00257","Payer_ID":"PAY-01","Service_Line":"Surgery","Claim_Amount":38350.0,"Risk_Band":"High","score":50.0,"Triggered_Rules":"PR-01;PR-03","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00499","Payer_ID":"PAY-04","Service_Line":"Surgery","Claim_Amount":28179.0,"Risk_Band":"High","score":50.0,"Triggered_Rules":"PR-01;PR-02;PR-05","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00780","Payer_ID":"PAY-01","Service_Line":"Surgery","Claim_Amount":16100.0,"Risk_Band":"High","score":50.0,"Triggered_Rules":"PR-01;PR-03","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00290","Payer_ID":"PAY-01","Service_Line":"Oncology","Claim_Amount":14426.0,"Risk_Band":"High","score":50.0,"Triggered_Rules":"PR-01;PR-02","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00379","Payer_ID":"PAY-03","Service_Line":"Surgery","Claim_Amount":11418.0,"Risk_Band":"High","score":50.0,"Triggered_Rules":"PR-01;PR-03","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00657","Payer_ID":"PAY-03","Service_Line":"Oncology","Claim_Amount":9458.0,"Risk_Band":"High","score":50.0,"Triggered_Rules":"PR-01;PR-03","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00291","Payer_ID":"PAY-04","Service_Line":"Surgery","Claim_Amount":7034.0,"Risk_Band":"High","score":50.0,"Triggered_Rules":"PR-01;PR-03","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00659","Payer_ID":"PAY-03","Service_Line":"Cardiology","Claim_Amount":2423.0,"Risk_Band":"High","score":50.0,"Triggered_Rules":"PR-01;PR-03;PR-05","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00334","Payer_ID":"PAY-01","Service_Line":"Cardiology","Claim_Amount":2066.0,"Risk_Band":"High","score":50.0,"Triggered_Rules":"PR-01;PR-02","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00207","Payer_ID":"PAY-03","Service_Line":"Orthopedics","Claim_Amount":1212.0,"Risk_Band":"High","score":50.0,"Triggered_Rules":"PR-01;PR-03;PR-05","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00425","Payer_ID":"PAY-01","Service_Line":"Physical Therapy","Claim_Amount":186.0,"Risk_Band":"High","score":50.0,"Triggered_Rules":"PR-01;PR-02","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00487","Payer_ID":"PAY-05","Service_Line":"Physical Therapy","Claim_Amount":156.0,"Risk_Band":"High","score":50.0,"Triggered_Rules":"PR-01;PR-02;PR-05","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00836","Payer_ID":"PAY-06","Service_Line":"Oncology","Claim_Amount":16902.0,"Risk_Band":"High","score":45.0,"Triggered_Rules":"PR-01;PR-04","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00125","Payer_ID":"PAY-07","Service_Line":"Imaging","Claim_Amount":1762.0,"Risk_Band":"High","score":45.0,"Triggered_Rules":"PR-01;PR-04","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00800","Payer_ID":"PAY-05","Service_Line":"Orthopedics","Claim_Amount":1194.0,"Risk_Band":"High","score":45.0,"Triggered_Rules":"PR-01;PR-04","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00554","Payer_ID":"PAY-01","Service_Line":"Physical Therapy","Claim_Amount":324.0,"Risk_Band":"High","score":45.0,"Triggered_Rules":"PR-01;PR-04","Primary_Owner":"Authorization team"},{"Claim_ID":"CLM-2026-P00712","Payer_ID":"PAY-03","Service_Line":"Surgery","Claim_Amount":12960.0,"Risk_Band":"High","score":40.0,"Triggered_Rules":"PR-02;PR-03","Primary_Owner":"Billing intake"},{"Claim_ID":"CLM-2026-P00204","Payer_ID":"PAY-04","Service_Line":"Oncology","Claim_Amount":8507.0,"Risk_Band":"High","score":40.0,"Triggered_Rules":"PR-02;PR-03","Primary_Owner":"Billing intake"},{"Claim_ID":"CLM-2026-P00676","Payer_ID":"PAY-04","Service_Line":"Oncology","Claim_Amount":7531.0,"Risk_Band":"High","score":40.0,"Triggered_Rules":"PR-02;PR-03;PR-05","Primary_Owner":"Billing intake"},{"Claim_ID":"CLM-2026-P00634","Payer_ID":"PAY-02","Service_Line":"Imaging","Claim_Amount":869.0,"Risk_Band":"High","score":40.0,"Triggered_Rules":"PR-02;PR-03","Primary_Owner":"Billing intake"},{"Claim_ID":"CLM-2026-P00092","Payer_ID":"PAY-03","Service_Line":"Physical Therapy","Claim_Amount":363.0,"Risk_Band":"High","score":40.0,"Triggered_Rules":"PR-02;PR-03;PR-05","Primary_Owner":"Billing intake"},{"Claim_ID":"CLM-2026-P00625","Payer_ID":"PAY-07","Service_Line":"Primary Care","Claim_Amount":309.0,"Risk_Band":"High","score":40.0,"Triggered_Rules":"PR-02;PR-03;PR-05","Primary_Owner":"Billing intake"},{"Claim_ID":"CLM-2026-P00025","Payer_ID":"PAY-04","Service_Line":"Primary Care","Claim_Amount":142.0,"Risk_Band":"High","score":40.0,"Triggered_Rules":"PR-02;PR-03","Primary_Owner":"Billing intake"},{"Claim_ID":"CLM-2026-P00152","Payer_ID":"PAY-01","Service_Line":"Primary Care","Claim_Amount":134.0,"Risk_Band":"High","score":40.0,"Triggered_Rules":"PR-02;PR-03;PR-05","Primary_Owner":"Billing intake"}],"queue_owner":[{"Primary_Owner":"Authorization team","claims":85,"at_risk":457540.0},{"Primary_Owner":"Billing intake","claims":89,"at_risk":38520.0},{"Primary_Owner":"Clinical documentation","claims":77,"at_risk":8589.0},{"Primary_Owner":"Coding team","claims":44,"at_risk":0.0},{"Primary_Owner":"Billing supervisor","claims":254,"at_risk":0.0},{"Primary_Owner":null,"claims":351,"at_risk":0.0}],"exceptions":[{"Rule_ID":"DQ-02","Severity":"Critical","Status":"Open","exceptions":15},{"Rule_ID":"DQ-01","Severity":"High","Status":"Open","exceptions":14},{"Rule_ID":"DQ-07","Severity":"High","Status":"Open","exceptions":13},{"Rule_ID":"DQ-05","Severity":"Critical","Status":"Open","exceptions":10},{"Rule_ID":"DQ-04","Severity":"Critical","Status":"Open","exceptions":8}]};
+const SPEC = {"kpis":[{"label":"Claims","query":"headline","field":"claims"},{"label":"Denial rate","query":"headline","field":"denial_pct","unit":"pct","tone":"bad"},{"label":"Denied amount","query":"headline","field":"denied_amt","unit":"usd","tone":"bad"},{"label":"Preventable share of denials","query":"headline","field":"preventable_pct","unit":"pct","tone":"warn","note":"Traceable to a pre-submission control"},{"label":"Modelled prevention opportunity","query":"headline","field":"opportunity","unit":"usd","note":"At 100% control effectiveness \u2014 not a forecast"},{"label":"Recovered on resubmission","query":"headline","field":"recovered","unit":"usd","tone":"good"},{"label":"Claims in pre-submission queue","query":"queue_head","field":"queued","note":"Stopped before they become denials"},{"label":"Amount at risk in queue","query":"queue_head","field":"at_risk","unit":"usd","tone":"warn"}],"cards":[{"title":"Denied dollars by reason","desc":"Sorted by money, not by count, because the two orderings disagree. The Preventable column is the mapping the whole model rests on and is shown explicitly rather than hidden in a filter.","type":"table","width":12,"query":"by_reason","pillMap":{"Yes":"bad","No":"good"},"columns":[{"label":"Denial reason","field":"Reason_Description"},{"label":"Category","field":"Reason_Category"},{"label":"Preventable","field":"Preventable","pill":true},{"label":"Denials","field":"denials","numeric":true},{"label":"Denied","field":"denied_amt","unit":"usd"},{"label":"Modelled opportunity","field":"opportunity","unit":"usd"}]},{"title":"Denied dollars by category","desc":"Four categories, one of which is most of the money.","type":"doughnut","width":4,"query":"by_category","label_field":"Reason_Category","series":[{"label":"Denied amount","field":"denied_amt"}]},{"title":"Which control failed, and what happened when it did","desc":"Bars count claims where the control failed; the line is the denial rate among those claims. A control with few failures but a high denial rate is a cheap fix with real yield.","type":"bar","width":8,"query":"controls","label_field":"control","rotate":20,"y_title":"Claims","y1_title":"Denial rate %","series":[{"label":"Claims where control failed","field":"gaps","colour":"warn"},{"label":"Denial rate when failed %","field":"denial_pct_when_failed","as":"line","axis":"right","colour":"bad"}]},{"title":"Denial rate by payer","desc":"Payer type is shown because the spread tracks it more closely than it tracks volume. Days outstanding is the collections cost of the same denials.","type":"table","width":6,"query":"by_payer","columns":[{"label":"Payer","field":"Payer_Name"},{"label":"Type","field":"Payer_Type"},{"label":"Claims","field":"claims","numeric":true},{"label":"Denial %","field":"denial_pct","unit":"pct"},{"label":"Denied","field":"denied_amt","unit":"usd"},{"label":"Days outstanding","field":"days_outstanding","unit":"days"}]},{"title":"Denial rate by service line","desc":"Worst first. The lines with the highest rate are not the ones with the most denied dollars, which is why both are plotted.","type":"bar","width":6,"query":"by_service","label_field":"Service_Line","rotate":30,"y_title":"Denial rate %","y1_title":"Denied $","series":[{"label":"Denied amount","field":"denied_amt","colour":"muted","axis":"right"},{"label":"Denial rate %","field":"denial_pct","as":"line","colour":"bad"}]},{"title":"Does the risk score separate anything?","desc":"Denial rate rises steeply across the three bands, from single digits in Low to the high thirties in High. The score is a ranking tool built from judgement weights, so this is a sanity check on ordering \u2014 not evidence that the score is calibrated to probability.","type":"bar","width":6,"query":"risk_band","label_field":"Risk_Band","series":[{"label":"Denial rate %","field":"denial_pct","colour":"bad"}]},{"title":"Submission lag and denial rate","desc":"Claims submitted late are denied more often, and timely-filing denials are unappealable in a way that documentation denials are not.","type":"bar","width":6,"query":"submit_lag","label_field":"band","series":[{"label":"Denial rate %","field":"denial_pct","colour":"warn"}]},{"title":"Monthly trend","desc":"Bars are claim volume on the right axis; the line is denial rate. Volume and rate move independently here, so the rate is not a capacity artefact.","type":"bar","width":8,"query":"monthly","label_field":"month","y_title":"Denial rate %","y1_title":"Claims","series":[{"label":"Claims","field":"claims","colour":"muted","axis":"right"},{"label":"Denial rate %","field":"denial_pct","as":"line","colour":"bad"}]},{"title":"Recovery on resubmission","desc":"Resubmission recovers a real share of denied dollars, which is the argument against treating prevention as the only lever \u2014 but it recovers cents on the dollar and costs a second touch.","type":"bar","width":4,"query":"resub","label_field":"bucket","series":[{"label":"Denied","field":"denied_amt","colour":"bad"},{"label":"Recovered","field":"recovered","colour":"good"}]},{"title":"Denial work queues","desc":"Where denials currently sit, ranked by dollars. Priority score is the ranking used to sequence work inside each queue.","type":"table","width":6,"query":"work_queue","columns":[{"label":"Work queue","field":"Work_Queue"},{"label":"Denials","field":"denials","numeric":true},{"label":"Denied","field":"denied_amt","unit":"usd"},{"label":"Days outstanding","field":"days_outstanding","unit":"days"},{"label":"Avg priority score","field":"priority_score","numeric":true}]},{"title":"Pre-submission queue by owner","desc":"The intervention is only real if someone owns it. Dollars at risk are assigned to the team that can actually clear the trigger.","type":"bar","width":6,"query":"queue_owner","label_field":"Primary_Owner","rotate":20,"y_title":"At-risk $","y1_title":"Claims","series":[{"label":"Amount at risk","field":"at_risk","colour":"warn"},{"label":"Claims","field":"claims","as":"line","axis":"right","colour":"accent"}]},{"title":"The prevention rules","desc":"Five rules, each with the trigger that fires it, the action taken and the owner. Every rule links back to the denial reason it is meant to prevent, so the rule set can be audited against outcomes later.","type":"table","width":12,"query":"rules","columns":[{"label":"Rule","field":"Rule_ID"},{"label":"Trigger","field":"Trigger"},{"label":"Prevention action","field":"Prevention_Action"},{"label":"Owner","field":"Owner"},{"label":"Targets denial reason","field":"Linked_Denial_Reason"}]},{"title":"Pre-submission work queue \u2014 highest risk first","desc":"Unsubmitted claims ranked by risk score then dollar value, with the rules each one triggered. This is the operational output of the whole project: a list someone can work on Monday.","type":"table","width":8,"query":"queue","pillMap":{"Critical":"bad","High":"warn","Moderate":"good","Low":"good"},"columns":[{"label":"Claim","field":"Claim_ID"},{"label":"Payer","field":"Payer_ID"},{"label":"Service line","field":"Service_Line"},{"label":"Amount","field":"Claim_Amount","unit":"usd"},{"label":"Risk","field":"Risk_Band","pill":true},{"label":"Score","field":"score","numeric":true},{"label":"Triggered rules","field":"Triggered_Rules"},{"label":"Owner","field":"Primary_Owner"}]},{"title":"Data quality exception log","desc":"Every rule violation with severity and disposition. Critical failures are excluded from reporting and logged rather than corrected, because a claim amount cannot be guessed without changing the number being measured.","type":"table","width":4,"query":"exceptions","pillMap":{"Critical":"bad","High":"warn","Medium":"warn","Low":"good"},"columns":[{"label":"Rule","field":"Rule_ID"},{"label":"Severity","field":"Severity","pill":true},{"label":"Status","field":"Status"},{"label":"Count","field":"exceptions","numeric":true}]}]};
+
+const FONT = getComputedStyle(document.body).fontFamily;
+Chart.defaults.font.family = FONT;
+Chart.defaults.font.size = 12;
+Chart.defaults.color = '#8b98a5';
+Chart.defaults.borderColor = '#2a333f';
+Chart.defaults.plugins.legend.labels.boxWidth = 11;
+Chart.defaults.plugins.legend.labels.usePointStyle = true;
+Chart.defaults.maintainAspectRatio = false;
+
+const PALETTE = ['#4c9aff','#35b77d','#e0a33e','#e05c5c','#a77bde','#3fb8c4','#d98ab8','#8b98a5'];
+const SEMANTIC = { good:'#35b77d', warn:'#e0a33e', bad:'#e05c5c', accent:'#4c9aff', muted:'#8b98a5' };
+
+function colourFor(i, spec) {
+  if (spec && spec.colour) return SEMANTIC[spec.colour] || spec.colour;
+  return PALETTE[i % PALETTE.length];
+}
+
+function fmt(v, unit) {
+  if (v === null || v === undefined) return '\u2014';
+  if (typeof v !== 'number') return v;
+  let s = Number.isInteger(v) ? v.toLocaleString() : v.toLocaleString(undefined, {maximumFractionDigits: 2});
+  if (unit === 'pct') s += '%';
+  if (unit === 'usd') s = '$' + Math.round(v).toLocaleString();
+  if (unit === 'hours') s += 'h';
+  if (unit === 'days') s += 'd';
+  return s;
+}
+
+// KPI cards
+const kpiHost = document.getElementById('kpis');
+for (const k of SPEC.kpis) {
+  const row = DATA[k.query][0];
+  const el = document.createElement('div');
+  el.className = 'kpi' + (k.tone ? ' ' + k.tone : '');
+  el.innerHTML = '<div class="label"></div><div class="value"></div>' + (k.note ? '<div class="note"></div>' : '');
+  el.querySelector('.label').textContent = k.label;
+  el.querySelector('.value').textContent = fmt(row[k.field], k.unit);
+  if (k.note) el.querySelector('.note').textContent = k.note;
+  kpiHost.appendChild(el);
+}
+
+// Cards
+const grid = document.getElementById('grid');
+for (const card of SPEC.cards) {
+  const rows = DATA[card.query];
+  const el = document.createElement('div');
+  el.className = 'card w' + (card.width || 6);
+  const h = document.createElement('h2'); h.textContent = card.title; el.appendChild(h);
+  if (card.desc) { const d = document.createElement('p'); d.className = 'desc'; d.textContent = card.desc; el.appendChild(d); }
+
+  if (card.type === 'table') {
+    const wrap = document.createElement('div');
+    wrap.className = card.scroll === false ? '' : 'scroll';
+    const t = document.createElement('table');
+    const thead = document.createElement('thead');
+    const htr = document.createElement('tr');
+    for (const c of card.columns) {
+      const th = document.createElement('th');
+      th.textContent = c.label;
+      if (c.unit || c.numeric) th.className = 'num';
+      htr.appendChild(th);
+    }
+    thead.appendChild(htr); t.appendChild(thead);
+    const tb = document.createElement('tbody');
+    for (const r of rows) {
+      const tr = document.createElement('tr');
+      for (const c of card.columns) {
+        const td = document.createElement('td');
+        if (c.unit || c.numeric) td.className = 'num';
+        if (c.pill) {
+          const sp = document.createElement('span');
+          sp.className = 'pill ' + (card.pillMap && card.pillMap[r[c.field]] ? card.pillMap[r[c.field]] : 'warn');
+          sp.textContent = r[c.field];
+          td.appendChild(sp);
+        } else {
+          td.textContent = fmt(r[c.field], c.unit);
+        }
+        tr.appendChild(td);
+      }
+      tb.appendChild(tr);
+    }
+    t.appendChild(tb); wrap.appendChild(t); el.appendChild(wrap);
+    grid.appendChild(el);
+    continue;
+  }
+
+  const wrap = document.createElement('div');
+  wrap.className = 'chart-wrap' + (card.tall ? ' tall' : '');
+  const cv = document.createElement('canvas');
+  wrap.appendChild(cv); el.appendChild(wrap); grid.appendChild(el);
+
+  const labels = rows.map(r => r[card.label_field]);
+  let cfg;
+
+  if (card.type === 'scatter') {
+    cfg = {
+      type: 'scatter',
+      data: { datasets: rows.map((r, i) => ({
+        label: String(r[card.label_field]),
+        data: [{x: r[card.x], y: r[card.y]}],
+        backgroundColor: PALETTE[i % PALETTE.length],
+        pointRadius: 8, pointHoverRadius: 10
+      })) },
+      options: {
+        scales: {
+          x: { title: {display: true, text: card.x_title}, grid: {color: '#222a34'} },
+          y: { title: {display: true, text: card.y_title}, grid: {color: '#222a34'} }
+        }
+      }
+    };
+  } else if (card.type === 'doughnut') {
+    cfg = {
+      type: 'doughnut',
+      data: { labels, datasets: [{
+        data: rows.map(r => r[card.series[0].field]),
+        backgroundColor: PALETTE, borderColor: '#171d24', borderWidth: 2
+      }] },
+      options: { cutout: '58%', plugins: { legend: { position: 'right' } } }
+    };
+  } else {
+    const horizontal = card.type === 'hbar';
+    cfg = {
+      type: card.type === 'line' ? 'line' : 'bar',
+      data: { labels, datasets: card.series.map((s, i) => ({
+        label: s.label,
+        data: rows.map(r => r[s.field]),
+        type: s.as === 'line' ? 'line' : undefined,
+        backgroundColor: colourFor(i, s),
+        borderColor: colourFor(i, s),
+        borderWidth: s.as === 'line' || card.type === 'line' ? 2 : 0,
+        borderRadius: s.as === 'line' || card.type === 'line' ? 0 : 3,
+        tension: 0.28,
+        pointRadius: 3,
+        fill: false,
+        yAxisID: s.axis === 'right' ? 'y1' : 'y',
+        order: s.as === 'line' ? 0 : 1
+      })) },
+      options: {
+        indexAxis: horizontal ? 'y' : 'x',
+        plugins: { legend: { display: card.series.length > 1 } },
+        scales: {
+          x: { grid: { color: horizontal ? '#222a34' : 'transparent' },
+               ticks: { autoSkip: false, maxRotation: card.rotate || 0 },
+               stacked: !!card.stacked },
+          y: { grid: { color: horizontal ? 'transparent' : '#222a34' },
+               beginAtZero: card.beginAtZero !== false,
+               stacked: !!card.stacked,
+               title: card.y_title ? {display: true, text: card.y_title} : undefined },
+          ...(card.series.some(s => s.axis === 'right') ? { y1: {
+            position: 'right', grid: {drawOnChartArea: false}, beginAtZero: true,
+            title: card.y1_title ? {display: true, text: card.y1_title} : undefined
+          } } : {})
+        }
+      }
+    };
+  }
+
+  if (card.reference) {
+    const v = card.reference.value;
+    cfg.options.plugins = cfg.options.plugins || {};
+    const label = card.reference.label;
+    cfg.plugins = [{
+      id: 'refline-' + card.title,
+      afterDraw(chart) {
+        const {ctx, chartArea, scales} = chart;
+        const horizontal = card.type === 'hbar';
+        const sc = horizontal ? scales.x : scales.y;
+        const p = sc.getPixelForValue(v);
+        ctx.save();
+        ctx.strokeStyle = '#e0a33e'; ctx.setLineDash([5, 4]); ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        if (horizontal) { ctx.moveTo(p, chartArea.top); ctx.lineTo(p, chartArea.bottom); }
+        else { ctx.moveTo(chartArea.left, p); ctx.lineTo(chartArea.right, p); }
+        ctx.stroke();
+        ctx.setLineDash([]); ctx.fillStyle = '#e0a33e'; ctx.font = '600 11px ' + FONT;
+        if (horizontal) { ctx.textAlign = 'center'; ctx.fillText(label, p, chartArea.top - 4); }
+        else { ctx.textAlign = 'right'; ctx.fillText(label, chartArea.right - 2, p - 5); }
+        ctx.restore();
+      }
+    }];
+  }
+
+  new Chart(cv, cfg);
+}
+</script>
+</body>
+</html>

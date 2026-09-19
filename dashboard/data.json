@@ -1,0 +1,823 @@
+{
+ "headline": [
+  {
+   "claims": 11967,
+   "billed": 33452727.0,
+   "denial_pct": 14.01,
+   "denied_amt": 5419266.0,
+   "preventable_pct": 76.7,
+   "opportunity": 3587476.0,
+   "recovered": 2486303.0,
+   "dq_score": 99.61
+  }
+ ],
+ "queue_head": [
+  {
+   "queued": 900,
+   "at_risk": 504650.0,
+   "high_risk": 104
+  }
+ ],
+ "by_reason": [
+  {
+   "Reason_Description": "No prior authorization on file",
+   "Reason_Category": "Authorization",
+   "Preventable": "Yes",
+   "denials": 353,
+   "denied_amt": 1842476.0,
+   "opportunity": 1473981.0
+  },
+  {
+   "Reason_Description": "Member not eligible on date of service",
+   "Reason_Category": "Eligibility",
+   "Preventable": "Yes",
+   "denials": 236,
+   "denied_amt": 629716.0,
+   "opportunity": 503773.0
+  },
+  {
+   "Reason_Description": "Service not medically necessary per policy",
+   "Reason_Category": "Coverage",
+   "Preventable": "No",
+   "denials": 193,
+   "denied_amt": 499863.0,
+   "opportunity": 0.0
+  },
+  {
+   "Reason_Description": "Medical necessity not documented",
+   "Reason_Category": "Documentation",
+   "Preventable": "Yes",
+   "denials": 146,
+   "denied_amt": 438188.0,
+   "opportunity": 350550.0
+  },
+  {
+   "Reason_Description": "Non-covered benefit under plan",
+   "Reason_Category": "Coverage",
+   "Preventable": "No",
+   "denials": 197,
+   "denied_amt": 435058.0,
+   "opportunity": 0.0
+  },
+  {
+   "Reason_Description": "Duplicate claim",
+   "Reason_Category": "Duplicate",
+   "Preventable": "Yes",
+   "denials": 81,
+   "denied_amt": 306675.0,
+   "opportunity": 245340.0
+  },
+  {
+   "Reason_Description": "Invalid or unbundled code combination",
+   "Reason_Category": "Coding",
+   "Preventable": "Yes",
+   "denials": 83,
+   "denied_amt": 283139.0,
+   "opportunity": 226512.0
+  },
+  {
+   "Reason_Description": "Timely filing limit exceeded",
+   "Reason_Category": "Timely Filing",
+   "Preventable": "Yes",
+   "denials": 83,
+   "denied_amt": 276112.0,
+   "opportunity": 220890.0
+  },
+  {
+   "Reason_Description": "Modifier missing or invalid",
+   "Reason_Category": "Coding",
+   "Preventable": "Yes",
+   "denials": 75,
+   "denied_amt": 218946.0,
+   "opportunity": 175157.0
+  },
+  {
+   "Reason_Description": "Coordination of benefits unresolved",
+   "Reason_Category": "Eligibility",
+   "Preventable": "Yes",
+   "denials": 90,
+   "denied_amt": 214801.0,
+   "opportunity": 171841.0
+  },
+  {
+   "Reason_Description": "Records not submitted with claim",
+   "Reason_Category": "Documentation",
+   "Preventable": "Yes",
+   "denials": 72,
+   "denied_amt": 156390.0,
+   "opportunity": 125112.0
+  },
+  {
+   "Reason_Description": "Authorization expired or mismatched",
+   "Reason_Category": "Authorization",
+   "Preventable": "Yes",
+   "denials": 67,
+   "denied_amt": 117902.0,
+   "opportunity": 94322.0
+  }
+ ],
+ "by_category": [
+  {
+   "Reason_Category": "Authorization",
+   "denied_amt": 1960378.0,
+   "denials": 420
+  },
+  {
+   "Reason_Category": "Coverage",
+   "denied_amt": 934921.0,
+   "denials": 390
+  },
+  {
+   "Reason_Category": "Eligibility",
+   "denied_amt": 844516.0,
+   "denials": 326
+  },
+  {
+   "Reason_Category": "Documentation",
+   "denied_amt": 594578.0,
+   "denials": 218
+  },
+  {
+   "Reason_Category": "Coding",
+   "denied_amt": 502086.0,
+   "denials": 158
+  },
+  {
+   "Reason_Category": "Duplicate",
+   "denied_amt": 306675.0,
+   "denials": 81
+  },
+  {
+   "Reason_Category": "Timely Filing",
+   "denied_amt": 276112.0,
+   "denials": 83
+  }
+ ],
+ "by_payer": [
+  {
+   "Payer_Name": "Silver Ridge Advantage",
+   "Payer_Type": "Medicare Advantage",
+   "claims": 2104,
+   "denial_pct": 15.49,
+   "denied_amt": 1273203.0,
+   "days_outstanding": 22.8
+  },
+  {
+   "Payer_Name": "Statewide Medicaid MCO",
+   "Payer_Type": "Medicaid",
+   "claims": 2145,
+   "denial_pct": 15.24,
+   "denied_amt": 1057198.0,
+   "days_outstanding": 21.9
+  },
+  {
+   "Payer_Name": "Panhandle Care Partners",
+   "Payer_Type": "Medicaid",
+   "claims": 1169,
+   "denial_pct": 15.06,
+   "denied_amt": 612351.0,
+   "days_outstanding": 22.9
+  },
+  {
+   "Payer_Name": "Cottonwood Mutual",
+   "Payer_Type": "Commercial",
+   "claims": 1415,
+   "denial_pct": 13.22,
+   "denied_amt": 634085.0,
+   "days_outstanding": 22.0
+  },
+  {
+   "Payer_Name": "Trinity Health Plan",
+   "Payer_Type": "Commercial",
+   "claims": 2367,
+   "denial_pct": 13.14,
+   "denied_amt": 840831.0,
+   "days_outstanding": 21.5
+  },
+  {
+   "Payer_Name": "Meridian Select",
+   "Payer_Type": "Commercial",
+   "claims": 789,
+   "denial_pct": 12.8,
+   "denied_amt": 389064.0,
+   "days_outstanding": 22.5
+  },
+  {
+   "Payer_Name": "Brazos Valley Benefits",
+   "Payer_Type": "Commercial",
+   "claims": 1978,
+   "denial_pct": 12.54,
+   "denied_amt": 612533.0,
+   "days_outstanding": 22.2
+  }
+ ],
+ "by_service": [
+  {
+   "Service_Line": "Surgery",
+   "claims": 1543,
+   "denial_pct": 17.76,
+   "denied_amt": 3468227.0,
+   "opportunity": 2293733.0
+  },
+  {
+   "Service_Line": "Orthopedics",
+   "claims": 847,
+   "denial_pct": 15.58,
+   "denied_amt": 139567.0,
+   "opportunity": 92700.0
+  },
+  {
+   "Service_Line": "Physical Therapy",
+   "claims": 817,
+   "denial_pct": 15.06,
+   "denied_amt": 38998.0,
+   "opportunity": 22492.0
+  },
+  {
+   "Service_Line": "Cardiology",
+   "claims": 967,
+   "denial_pct": 14.89,
+   "denied_amt": 340452.0,
+   "opportunity": 199984.0
+  },
+  {
+   "Service_Line": "Imaging",
+   "claims": 2857,
+   "denial_pct": 14.0,
+   "denied_amt": 538560.0,
+   "opportunity": 333420.0
+  },
+  {
+   "Service_Line": "Oncology",
+   "claims": 603,
+   "denial_pct": 13.93,
+   "denied_amt": 802104.0,
+   "opportunity": 592417.0
+  },
+  {
+   "Service_Line": "Behavioral Health",
+   "claims": 973,
+   "denial_pct": 12.54,
+   "denied_amt": 27608.0,
+   "opportunity": 15793.0
+  },
+  {
+   "Service_Line": "Primary Care",
+   "claims": 2188,
+   "denial_pct": 12.2,
+   "denied_amt": 50848.0,
+   "opportunity": 29669.0
+  },
+  {
+   "Service_Line": "Lab",
+   "claims": 1172,
+   "denial_pct": 11.09,
+   "denied_amt": 12902.0,
+   "opportunity": 7268.0
+  }
+ ],
+ "controls": [
+  {
+   "control": "Authorization missing where required",
+   "gaps": 1060,
+   "denial_pct_when_failed": 36.7
+  },
+  {
+   "control": "Eligibility not verified",
+   "gaps": 1062,
+   "denial_pct_when_failed": 30.1
+  },
+  {
+   "control": "Documentation incomplete",
+   "gaps": 1076,
+   "denial_pct_when_failed": 26.2
+  },
+  {
+   "control": "Coding validation failed",
+   "gaps": 761,
+   "denial_pct_when_failed": 25.6
+  },
+  {
+   "control": "Timely filing at risk",
+   "gaps": 0,
+   "denial_pct_when_failed": null
+  }
+ ],
+ "risk_band": [
+  {
+   "Risk_Band": "Low",
+   "claims": 8349,
+   "denial_pct": 7.82,
+   "denied_amt": 1503540.0
+  },
+  {
+   "Risk_Band": "Medium",
+   "claims": 2315,
+   "denial_pct": 22.94,
+   "denied_amt": 1467749.0
+  },
+  {
+   "Risk_Band": "High",
+   "claims": 1303,
+   "denial_pct": 37.76,
+   "denied_amt": 2447977.0
+  }
+ ],
+ "submit_lag": [
+  {
+   "band": "0-3 days",
+   "claims": 2008,
+   "denial_pct": 13.7
+  },
+  {
+   "band": "4-7 days",
+   "claims": 3910,
+   "denial_pct": 12.92
+  },
+  {
+   "band": "8-14 days",
+   "claims": 3910,
+   "denial_pct": 12.74
+  },
+  {
+   "band": "15-30 days",
+   "claims": 1557,
+   "denial_pct": 14.52
+  },
+  {
+   "band": "31+ days",
+   "claims": 582,
+   "denial_pct": 29.55
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2026-01",
+   "claims": 1410,
+   "denial_pct": 13.26,
+   "denied_amt": 585370.0
+  },
+  {
+   "month": "2026-02",
+   "claims": 1342,
+   "denial_pct": 14.53,
+   "denied_amt": 653085.0
+  },
+  {
+   "month": "2026-03",
+   "claims": 1547,
+   "denial_pct": 12.61,
+   "denied_amt": 633575.0
+  },
+  {
+   "month": "2026-04",
+   "claims": 1506,
+   "denial_pct": 15.67,
+   "denied_amt": 740029.0
+  },
+  {
+   "month": "2026-05",
+   "claims": 1576,
+   "denial_pct": 13.52,
+   "denied_amt": 697302.0
+  },
+  {
+   "month": "2026-06",
+   "claims": 1523,
+   "denial_pct": 13.66,
+   "denied_amt": 631788.0
+  },
+  {
+   "month": "2026-07",
+   "claims": 1547,
+   "denial_pct": 14.16,
+   "denied_amt": 801263.0
+  },
+  {
+   "month": "2026-08",
+   "claims": 1516,
+   "denial_pct": 14.71,
+   "denied_amt": 676855.0
+  }
+ ],
+ "resub": [
+  {
+   "bucket": "Not resubmitted",
+   "denials": 585,
+   "denied_amt": 1552754.0,
+   "recovered": 0.0,
+   "recovery_pct": 0.0
+  },
+  {
+   "bucket": "Resubmitted",
+   "denials": 1091,
+   "denied_amt": 3866512.0,
+   "recovered": 2486303.0,
+   "recovery_pct": 64.3
+  }
+ ],
+ "work_queue": [
+  {
+   "Work_Queue": "Authorization Review",
+   "denials": 420,
+   "denied_amt": 1960378.0,
+   "days_outstanding": 39.1,
+   "priority_score": 37.7
+  },
+  {
+   "Work_Queue": "Payer Relations",
+   "denials": 390,
+   "denied_amt": 934921.0,
+   "days_outstanding": 39.5,
+   "priority_score": 21.9
+  },
+  {
+   "Work_Queue": "Eligibility Review",
+   "denials": 326,
+   "denied_amt": 844516.0,
+   "days_outstanding": 41.1,
+   "priority_score": 36.2
+  },
+  {
+   "Work_Queue": "Clinical Documentation",
+   "denials": 218,
+   "denied_amt": 594578.0,
+   "days_outstanding": 38.8,
+   "priority_score": 35.5
+  },
+  {
+   "Work_Queue": "Coding Review",
+   "denials": 158,
+   "denied_amt": 502086.0,
+   "days_outstanding": 38.6,
+   "priority_score": 36.1
+  },
+  {
+   "Work_Queue": "Billing Intake",
+   "denials": 81,
+   "denied_amt": 306675.0,
+   "days_outstanding": 39.9,
+   "priority_score": 36.9
+  },
+  {
+   "Work_Queue": "Billing Escalation",
+   "denials": 83,
+   "denied_amt": 276112.0,
+   "days_outstanding": 43.0,
+   "priority_score": 37.1
+  }
+ ],
+ "rules": [
+  {
+   "Rule_ID": "PR-01",
+   "Trigger": "Authorization_Present = No and auth required",
+   "Prevention_Action": "Hold claim, verify authorization",
+   "Owner": "Authorization team",
+   "Linked_Denial_Reason": "AUTH-01"
+  },
+  {
+   "Rule_ID": "PR-02",
+   "Trigger": "Eligibility_Verified = No",
+   "Prevention_Action": "Verify active coverage for the date of service",
+   "Owner": "Billing intake",
+   "Linked_Denial_Reason": "ELIG-01"
+  },
+  {
+   "Rule_ID": "PR-03",
+   "Trigger": "Documentation_Complete = No",
+   "Prevention_Action": "Request missing clinical documentation",
+   "Owner": "Clinical documentation",
+   "Linked_Denial_Reason": "DOC-01"
+  },
+  {
+   "Rule_ID": "PR-04",
+   "Trigger": "Coding_Validation_Passed = No",
+   "Prevention_Action": "Route to coding review before submission",
+   "Owner": "Coding team",
+   "Linked_Denial_Reason": "COD-01"
+  },
+  {
+   "Rule_ID": "PR-05",
+   "Trigger": "Days_To_Submit > 20",
+   "Prevention_Action": "Expedite submission review",
+   "Owner": "Billing supervisor",
+   "Linked_Denial_Reason": "TF-01"
+  }
+ ],
+ "queue": [
+  {
+   "Claim_ID": "CLM-2026-P00812",
+   "Payer_ID": "PAY-03",
+   "Service_Line": "Surgery",
+   "Claim_Amount": 7284.0,
+   "Risk_Band": "High",
+   "score": 65.0,
+   "Triggered_Rules": "PR-01;PR-03;PR-04",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00257",
+   "Payer_ID": "PAY-01",
+   "Service_Line": "Surgery",
+   "Claim_Amount": 38350.0,
+   "Risk_Band": "High",
+   "score": 50.0,
+   "Triggered_Rules": "PR-01;PR-03",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00499",
+   "Payer_ID": "PAY-04",
+   "Service_Line": "Surgery",
+   "Claim_Amount": 28179.0,
+   "Risk_Band": "High",
+   "score": 50.0,
+   "Triggered_Rules": "PR-01;PR-02;PR-05",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00780",
+   "Payer_ID": "PAY-01",
+   "Service_Line": "Surgery",
+   "Claim_Amount": 16100.0,
+   "Risk_Band": "High",
+   "score": 50.0,
+   "Triggered_Rules": "PR-01;PR-03",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00290",
+   "Payer_ID": "PAY-01",
+   "Service_Line": "Oncology",
+   "Claim_Amount": 14426.0,
+   "Risk_Band": "High",
+   "score": 50.0,
+   "Triggered_Rules": "PR-01;PR-02",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00379",
+   "Payer_ID": "PAY-03",
+   "Service_Line": "Surgery",
+   "Claim_Amount": 11418.0,
+   "Risk_Band": "High",
+   "score": 50.0,
+   "Triggered_Rules": "PR-01;PR-03",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00657",
+   "Payer_ID": "PAY-03",
+   "Service_Line": "Oncology",
+   "Claim_Amount": 9458.0,
+   "Risk_Band": "High",
+   "score": 50.0,
+   "Triggered_Rules": "PR-01;PR-03",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00291",
+   "Payer_ID": "PAY-04",
+   "Service_Line": "Surgery",
+   "Claim_Amount": 7034.0,
+   "Risk_Band": "High",
+   "score": 50.0,
+   "Triggered_Rules": "PR-01;PR-03",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00659",
+   "Payer_ID": "PAY-03",
+   "Service_Line": "Cardiology",
+   "Claim_Amount": 2423.0,
+   "Risk_Band": "High",
+   "score": 50.0,
+   "Triggered_Rules": "PR-01;PR-03;PR-05",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00334",
+   "Payer_ID": "PAY-01",
+   "Service_Line": "Cardiology",
+   "Claim_Amount": 2066.0,
+   "Risk_Band": "High",
+   "score": 50.0,
+   "Triggered_Rules": "PR-01;PR-02",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00207",
+   "Payer_ID": "PAY-03",
+   "Service_Line": "Orthopedics",
+   "Claim_Amount": 1212.0,
+   "Risk_Band": "High",
+   "score": 50.0,
+   "Triggered_Rules": "PR-01;PR-03;PR-05",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00425",
+   "Payer_ID": "PAY-01",
+   "Service_Line": "Physical Therapy",
+   "Claim_Amount": 186.0,
+   "Risk_Band": "High",
+   "score": 50.0,
+   "Triggered_Rules": "PR-01;PR-02",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00487",
+   "Payer_ID": "PAY-05",
+   "Service_Line": "Physical Therapy",
+   "Claim_Amount": 156.0,
+   "Risk_Band": "High",
+   "score": 50.0,
+   "Triggered_Rules": "PR-01;PR-02;PR-05",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00836",
+   "Payer_ID": "PAY-06",
+   "Service_Line": "Oncology",
+   "Claim_Amount": 16902.0,
+   "Risk_Band": "High",
+   "score": 45.0,
+   "Triggered_Rules": "PR-01;PR-04",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00125",
+   "Payer_ID": "PAY-07",
+   "Service_Line": "Imaging",
+   "Claim_Amount": 1762.0,
+   "Risk_Band": "High",
+   "score": 45.0,
+   "Triggered_Rules": "PR-01;PR-04",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00800",
+   "Payer_ID": "PAY-05",
+   "Service_Line": "Orthopedics",
+   "Claim_Amount": 1194.0,
+   "Risk_Band": "High",
+   "score": 45.0,
+   "Triggered_Rules": "PR-01;PR-04",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00554",
+   "Payer_ID": "PAY-01",
+   "Service_Line": "Physical Therapy",
+   "Claim_Amount": 324.0,
+   "Risk_Band": "High",
+   "score": 45.0,
+   "Triggered_Rules": "PR-01;PR-04",
+   "Primary_Owner": "Authorization team"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00712",
+   "Payer_ID": "PAY-03",
+   "Service_Line": "Surgery",
+   "Claim_Amount": 12960.0,
+   "Risk_Band": "High",
+   "score": 40.0,
+   "Triggered_Rules": "PR-02;PR-03",
+   "Primary_Owner": "Billing intake"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00204",
+   "Payer_ID": "PAY-04",
+   "Service_Line": "Oncology",
+   "Claim_Amount": 8507.0,
+   "Risk_Band": "High",
+   "score": 40.0,
+   "Triggered_Rules": "PR-02;PR-03",
+   "Primary_Owner": "Billing intake"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00676",
+   "Payer_ID": "PAY-04",
+   "Service_Line": "Oncology",
+   "Claim_Amount": 7531.0,
+   "Risk_Band": "High",
+   "score": 40.0,
+   "Triggered_Rules": "PR-02;PR-03;PR-05",
+   "Primary_Owner": "Billing intake"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00634",
+   "Payer_ID": "PAY-02",
+   "Service_Line": "Imaging",
+   "Claim_Amount": 869.0,
+   "Risk_Band": "High",
+   "score": 40.0,
+   "Triggered_Rules": "PR-02;PR-03",
+   "Primary_Owner": "Billing intake"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00092",
+   "Payer_ID": "PAY-03",
+   "Service_Line": "Physical Therapy",
+   "Claim_Amount": 363.0,
+   "Risk_Band": "High",
+   "score": 40.0,
+   "Triggered_Rules": "PR-02;PR-03;PR-05",
+   "Primary_Owner": "Billing intake"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00625",
+   "Payer_ID": "PAY-07",
+   "Service_Line": "Primary Care",
+   "Claim_Amount": 309.0,
+   "Risk_Band": "High",
+   "score": 40.0,
+   "Triggered_Rules": "PR-02;PR-03;PR-05",
+   "Primary_Owner": "Billing intake"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00025",
+   "Payer_ID": "PAY-04",
+   "Service_Line": "Primary Care",
+   "Claim_Amount": 142.0,
+   "Risk_Band": "High",
+   "score": 40.0,
+   "Triggered_Rules": "PR-02;PR-03",
+   "Primary_Owner": "Billing intake"
+  },
+  {
+   "Claim_ID": "CLM-2026-P00152",
+   "Payer_ID": "PAY-01",
+   "Service_Line": "Primary Care",
+   "Claim_Amount": 134.0,
+   "Risk_Band": "High",
+   "score": 40.0,
+   "Triggered_Rules": "PR-02;PR-03;PR-05",
+   "Primary_Owner": "Billing intake"
+  }
+ ],
+ "queue_owner": [
+  {
+   "Primary_Owner": "Authorization team",
+   "claims": 85,
+   "at_risk": 457540.0
+  },
+  {
+   "Primary_Owner": "Billing intake",
+   "claims": 89,
+   "at_risk": 38520.0
+  },
+  {
+   "Primary_Owner": "Clinical documentation",
+   "claims": 77,
+   "at_risk": 8589.0
+  },
+  {
+   "Primary_Owner": "Coding team",
+   "claims": 44,
+   "at_risk": 0.0
+  },
+  {
+   "Primary_Owner": "Billing supervisor",
+   "claims": 254,
+   "at_risk": 0.0
+  },
+  {
+   "Primary_Owner": null,
+   "claims": 351,
+   "at_risk": 0.0
+  }
+ ],
+ "exceptions": [
+  {
+   "Rule_ID": "DQ-02",
+   "Severity": "Critical",
+   "Status": "Open",
+   "exceptions": 15
+  },
+  {
+   "Rule_ID": "DQ-01",
+   "Severity": "High",
+   "Status": "Open",
+   "exceptions": 14
+  },
+  {
+   "Rule_ID": "DQ-07",
+   "Severity": "High",
+   "Status": "Open",
+   "exceptions": 13
+  },
+  {
+   "Rule_ID": "DQ-05",
+   "Severity": "Critical",
+   "Status": "Open",
+   "exceptions": 10
+  },
+  {
+   "Rule_ID": "DQ-04",
+   "Severity": "Critical",
+   "Status": "Open",
+   "exceptions": 8
+  }
+ ]
+}
