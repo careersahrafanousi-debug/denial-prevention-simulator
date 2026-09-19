@@ -1,0 +1,6 @@
+control,gaps,denial_pct_when_failed
+Authorization missing where required,1060,36.7
+Eligibility not verified,1062,30.1
+Documentation incomplete,1076,26.2
+Coding validation failed,761,25.6
+Timely filing at risk,0,

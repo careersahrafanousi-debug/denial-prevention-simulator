@@ -1,0 +1,10 @@
+Service_Line,claims,denial_pct,denied_amt,opportunity
+Surgery,1543,17.76,3468227.0,2293733.0
+Orthopedics,847,15.58,139567.0,92700.0
+Physical Therapy,817,15.06,38998.0,22492.0
+Cardiology,967,14.89,340452.0,199984.0
+Imaging,2857,14.0,538560.0,333420.0
+Oncology,603,13.93,802104.0,592417.0
+Behavioral Health,973,12.54,27608.0,15793.0
+Primary Care,2188,12.2,50848.0,29669.0
+Lab,1172,11.09,12902.0,7268.0

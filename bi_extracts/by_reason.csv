@@ -1,0 +1,13 @@
+Reason_Description,Reason_Category,Preventable,denials,denied_amt,opportunity
+No prior authorization on file,Authorization,Yes,353,1842476.0,1473981.0
+Member not eligible on date of service,Eligibility,Yes,236,629716.0,503773.0
+Service not medically necessary per policy,Coverage,No,193,499863.0,0.0
+Medical necessity not documented,Documentation,Yes,146,438188.0,350550.0
+Non-covered benefit under plan,Coverage,No,197,435058.0,0.0
+Duplicate claim,Duplicate,Yes,81,306675.0,245340.0
+Invalid or unbundled code combination,Coding,Yes,83,283139.0,226512.0
+Timely filing limit exceeded,Timely Filing,Yes,83,276112.0,220890.0
+Modifier missing or invalid,Coding,Yes,75,218946.0,175157.0
+Coordination of benefits unresolved,Eligibility,Yes,90,214801.0,171841.0
+Records not submitted with claim,Documentation,Yes,72,156390.0,125112.0
+Authorization expired or mismatched,Authorization,Yes,67,117902.0,94322.0

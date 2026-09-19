@@ -1,0 +1,8 @@
+Work_Queue,denials,denied_amt,days_outstanding,priority_score
+Authorization Review,420,1960378.0,39.1,37.7
+Payer Relations,390,934921.0,39.5,21.9
+Eligibility Review,326,844516.0,41.1,36.2
+Clinical Documentation,218,594578.0,38.8,35.5
+Coding Review,158,502086.0,38.6,36.1
+Billing Intake,81,306675.0,39.9,36.9
+Billing Escalation,83,276112.0,43.0,37.1

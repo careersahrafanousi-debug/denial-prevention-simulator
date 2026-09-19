@@ -1,0 +1,8 @@
+Payer_Name,Payer_Type,claims,denial_pct,denied_amt,days_outstanding
+Silver Ridge Advantage,Medicare Advantage,2104,15.49,1273203.0,22.8
+Statewide Medicaid MCO,Medicaid,2145,15.24,1057198.0,21.9
+Panhandle Care Partners,Medicaid,1169,15.06,612351.0,22.9
+Cottonwood Mutual,Commercial,1415,13.22,634085.0,22.0
+Trinity Health Plan,Commercial,2367,13.14,840831.0,21.5
+Meridian Select,Commercial,789,12.8,389064.0,22.5
+Brazos Valley Benefits,Commercial,1978,12.54,612533.0,22.2

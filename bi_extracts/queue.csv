@@ -1,0 +1,26 @@
+Claim_ID,Payer_ID,Service_Line,Claim_Amount,Risk_Band,score,Triggered_Rules,Primary_Owner
+CLM-2026-P00812,PAY-03,Surgery,7284.0,High,65.0,PR-01;PR-03;PR-04,Authorization team
+CLM-2026-P00257,PAY-01,Surgery,38350.0,High,50.0,PR-01;PR-03,Authorization team
+CLM-2026-P00499,PAY-04,Surgery,28179.0,High,50.0,PR-01;PR-02;PR-05,Authorization team
+CLM-2026-P00780,PAY-01,Surgery,16100.0,High,50.0,PR-01;PR-03,Authorization team
+CLM-2026-P00290,PAY-01,Oncology,14426.0,High,50.0,PR-01;PR-02,Authorization team
+CLM-2026-P00379,PAY-03,Surgery,11418.0,High,50.0,PR-01;PR-03,Authorization team
+CLM-2026-P00657,PAY-03,Oncology,9458.0,High,50.0,PR-01;PR-03,Authorization team
+CLM-2026-P00291,PAY-04,Surgery,7034.0,High,50.0,PR-01;PR-03,Authorization team
+CLM-2026-P00659,PAY-03,Cardiology,2423.0,High,50.0,PR-01;PR-03;PR-05,Authorization team
+CLM-2026-P00334,PAY-01,Cardiology,2066.0,High,50.0,PR-01;PR-02,Authorization team
+CLM-2026-P00207,PAY-03,Orthopedics,1212.0,High,50.0,PR-01;PR-03;PR-05,Authorization team
+CLM-2026-P00425,PAY-01,Physical Therapy,186.0,High,50.0,PR-01;PR-02,Authorization team
+CLM-2026-P00487,PAY-05,Physical Therapy,156.0,High,50.0,PR-01;PR-02;PR-05,Authorization team
+CLM-2026-P00836,PAY-06,Oncology,16902.0,High,45.0,PR-01;PR-04,Authorization team
+CLM-2026-P00125,PAY-07,Imaging,1762.0,High,45.0,PR-01;PR-04,Authorization team
+CLM-2026-P00800,PAY-05,Orthopedics,1194.0,High,45.0,PR-01;PR-04,Authorization team
+CLM-2026-P00554,PAY-01,Physical Therapy,324.0,High,45.0,PR-01;PR-04,Authorization team
+CLM-2026-P00712,PAY-03,Surgery,12960.0,High,40.0,PR-02;PR-03,Billing intake
+CLM-2026-P00204,PAY-04,Oncology,8507.0,High,40.0,PR-02;PR-03,Billing intake
+CLM-2026-P00676,PAY-04,Oncology,7531.0,High,40.0,PR-02;PR-03;PR-05,Billing intake
+CLM-2026-P00634,PAY-02,Imaging,869.0,High,40.0,PR-02;PR-03,Billing intake
+CLM-2026-P00092,PAY-03,Physical Therapy,363.0,High,40.0,PR-02;PR-03;PR-05,Billing intake
+CLM-2026-P00625,PAY-07,Primary Care,309.0,High,40.0,PR-02;PR-03;PR-05,Billing intake
+CLM-2026-P00025,PAY-04,Primary Care,142.0,High,40.0,PR-02;PR-03,Billing intake
+CLM-2026-P00152,PAY-01,Primary Care,134.0,High,40.0,PR-02;PR-03;PR-05,Billing intake
