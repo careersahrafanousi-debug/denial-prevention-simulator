@@ -1,0 +1,61 @@
+Exception_ID,Rule_ID,Record_ID,Severity,Description,Owner,Status
+EX-00001,DQ-01,CLM-2026-000811,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00002,DQ-01,CLM-2026-006579,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00003,DQ-01,CLM-2026-004619,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00004,DQ-01,CLM-2026-005073,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00005,DQ-01,CLM-2026-003709,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00006,DQ-01,CLM-2026-000918,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00007,DQ-01,CLM-2026-005091,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00008,DQ-01,CLM-2026-006013,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00009,DQ-01,CLM-2026-009052,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00010,DQ-01,CLM-2026-001164,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00011,DQ-01,CLM-2026-005630,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00012,DQ-01,CLM-2026-011475,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00013,DQ-01,CLM-2026-009312,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00014,DQ-01,CLM-2026-009914,High,Duplicate Claim_ID in extract,Revenue Cycle Analyst,Open
+EX-00015,DQ-02,CLM-2026-005031,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00016,DQ-02,CLM-2026-008953,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00017,DQ-02,CLM-2026-007995,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00018,DQ-02,CLM-2026-011791,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00019,DQ-02,CLM-2026-006872,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00020,DQ-02,CLM-2026-004209,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00021,DQ-02,CLM-2026-008729,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00022,DQ-02,CLM-2026-005041,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00023,DQ-02,CLM-2026-004300,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00024,DQ-02,CLM-2026-003714,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00025,DQ-02,CLM-2026-009679,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00026,DQ-02,CLM-2026-010194,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00027,DQ-02,CLM-2026-005350,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00028,DQ-02,CLM-2026-001241,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00029,DQ-02,CLM-2026-001386,Critical,Denied claim with no denial reason code,Revenue Cycle Analyst,Open
+EX-00030,DQ-04,CLM-2026-006112,Critical,Claim amount is zero or negative,Revenue Cycle Analyst,Open
+EX-00031,DQ-04,CLM-2026-006705,Critical,Claim amount is zero or negative,Revenue Cycle Analyst,Open
+EX-00032,DQ-04,CLM-2026-003976,Critical,Claim amount is zero or negative,Revenue Cycle Analyst,Open
+EX-00033,DQ-04,CLM-2026-005258,Critical,Claim amount is zero or negative,Revenue Cycle Analyst,Open
+EX-00034,DQ-04,CLM-2026-009214,Critical,Claim amount is zero or negative,Revenue Cycle Analyst,Open
+EX-00035,DQ-04,CLM-2026-006357,Critical,Claim amount is zero or negative,Revenue Cycle Analyst,Open
+EX-00036,DQ-04,CLM-2026-004347,Critical,Claim amount is zero or negative,Revenue Cycle Analyst,Open
+EX-00037,DQ-04,CLM-2026-000761,Critical,Claim amount is zero or negative,Revenue Cycle Analyst,Open
+EX-00038,DQ-05,CLM-2026-000811,Critical,Submission date precedes service date,Revenue Cycle Analyst,Open
+EX-00039,DQ-05,CLM-2026-006434,Critical,Submission date precedes service date,Revenue Cycle Analyst,Open
+EX-00040,DQ-05,CLM-2026-006037,Critical,Submission date precedes service date,Revenue Cycle Analyst,Open
+EX-00041,DQ-05,CLM-2026-003272,Critical,Submission date precedes service date,Revenue Cycle Analyst,Open
+EX-00042,DQ-05,CLM-2026-004467,Critical,Submission date precedes service date,Revenue Cycle Analyst,Open
+EX-00043,DQ-05,CLM-2026-011453,Critical,Submission date precedes service date,Revenue Cycle Analyst,Open
+EX-00044,DQ-05,CLM-2026-004762,Critical,Submission date precedes service date,Revenue Cycle Analyst,Open
+EX-00045,DQ-05,CLM-2026-010014,Critical,Submission date precedes service date,Revenue Cycle Analyst,Open
+EX-00046,DQ-05,CLM-2026-000210,Critical,Submission date precedes service date,Revenue Cycle Analyst,Open
+EX-00047,DQ-05,CLM-2026-001125,Critical,Submission date precedes service date,Revenue Cycle Analyst,Open
+EX-00048,DQ-07,CLM-2026-006421,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
+EX-00049,DQ-07,CLM-2026-007159,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
+EX-00050,DQ-07,CLM-2026-001290,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
+EX-00051,DQ-07,CLM-2026-000092,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
+EX-00052,DQ-07,CLM-2026-007364,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
+EX-00053,DQ-07,CLM-2026-009115,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
+EX-00054,DQ-07,CLM-2026-002530,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
+EX-00055,DQ-07,CLM-2026-002389,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
+EX-00056,DQ-07,CLM-2026-008164,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
+EX-00057,DQ-07,CLM-2026-000756,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
+EX-00058,DQ-07,CLM-2026-003919,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
+EX-00059,DQ-07,CLM-2026-000834,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
+EX-00060,DQ-07,CLM-2026-003255,High,Claim status conflicts with denial flag,Revenue Cycle Analyst,Open
