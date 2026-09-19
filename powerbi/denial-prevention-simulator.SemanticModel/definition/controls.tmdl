@@ -1,0 +1,41 @@
+table controls
+
+	column control
+		dataType: string
+		summarizeBy: none
+		sourceColumn: control
+
+	column gaps
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: gaps
+
+	column denial_pct_when_failed
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denial_pct_when_failed
+
+	measure 'Claims where control failed (controls)' = SUM ( 'controls'[gaps] )
+		formatString: #,0.00
+		displayFolder: Measures
+		/// Claims where control failed for the 'Which control failed, and what happened when it did' visual.
+
+	measure 'Denial rate when failed % (controls)' = AVERAGE ( 'controls'[denial_pct_when_failed] )
+		formatString: #,0.00
+		displayFolder: Measures
+		/// Denial rate when failed % for the 'Which control failed, and what happened when it did' visual.
+
+	partition controls = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\controls.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"control", type text},
+				        {"gaps", Int64.Type},
+				        {"denial_pct_when_failed", type number}
+				    })
+				in
+				    Typed

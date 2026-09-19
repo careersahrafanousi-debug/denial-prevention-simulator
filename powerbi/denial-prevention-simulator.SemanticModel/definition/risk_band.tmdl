@@ -1,0 +1,42 @@
+table risk_band
+
+	column Risk_Band
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Risk_Band
+
+	column claims
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: claims
+
+	column denial_pct
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denial_pct
+
+	column denied_amt
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denied_amt
+
+	measure 'Denial rate % (risk_band)' = AVERAGE ( 'risk_band'[denial_pct] )
+		formatString: #,0.00
+		displayFolder: Measures
+		/// Denial rate % for the 'Does the risk score separate anything?' visual.
+
+	partition risk_band = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\risk_band.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"Risk_Band", type text},
+				        {"claims", Int64.Type},
+				        {"denial_pct", type number},
+				        {"denied_amt", type number}
+				    })
+				in
+				    Typed

@@ -1,0 +1,53 @@
+table by_service
+
+	column Service_Line
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Service_Line
+
+	column claims
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: claims
+
+	column denial_pct
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denial_pct
+
+	column denied_amt
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denied_amt
+
+	column opportunity
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: opportunity
+
+	measure 'Denied amount (by_service)' = SUM ( 'by_service'[denied_amt] )
+		formatString: #,0.00
+		displayFolder: Measures
+		/// Denied amount for the 'Denial rate by service line' visual.
+
+	measure 'Denial rate % (by_service)' = AVERAGE ( 'by_service'[denial_pct] )
+		formatString: #,0.00
+		displayFolder: Measures
+		/// Denial rate % for the 'Denial rate by service line' visual.
+
+	partition by_service = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\by_service.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"Service_Line", type text},
+				        {"claims", Int64.Type},
+				        {"denial_pct", type number},
+				        {"denied_amt", type number},
+				        {"opportunity", type number}
+				    })
+				in
+				    Typed

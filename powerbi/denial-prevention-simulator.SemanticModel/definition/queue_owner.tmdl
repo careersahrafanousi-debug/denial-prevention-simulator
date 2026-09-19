@@ -1,0 +1,41 @@
+table queue_owner
+
+	column Primary_Owner
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Primary_Owner
+
+	column claims
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: claims
+
+	column at_risk
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: at_risk
+
+	measure 'Amount at risk (queue_owner)' = SUM ( 'queue_owner'[at_risk] )
+		formatString: #,0.00
+		displayFolder: Measures
+		/// Amount at risk for the 'Pre-submission queue by owner' visual.
+
+	measure 'Claims (queue_owner)' = SUM ( 'queue_owner'[claims] )
+		formatString: #,0.00
+		displayFolder: Measures
+		/// Claims for the 'Pre-submission queue by owner' visual.
+
+	partition queue_owner = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\queue_owner.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"Primary_Owner", type text},
+				        {"claims", Int64.Type},
+				        {"at_risk", type number}
+				    })
+				in
+				    Typed

@@ -1,0 +1,43 @@
+table work_queue
+
+	column Work_Queue
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Work_Queue
+
+	column denials
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: denials
+
+	column denied_amt
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denied_amt
+
+	column days_outstanding
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: days_outstanding
+
+	column priority_score
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: priority_score
+
+	partition work_queue = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\work_queue.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"Work_Queue", type text},
+				        {"denials", Int64.Type},
+				        {"denied_amt", type number},
+				        {"days_outstanding", type number},
+				        {"priority_score", type number}
+				    })
+				in
+				    Typed

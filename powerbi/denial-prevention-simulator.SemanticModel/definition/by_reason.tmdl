@@ -1,0 +1,49 @@
+table by_reason
+
+	column Reason_Description
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Reason_Description
+
+	column Reason_Category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Reason_Category
+
+	column Preventable
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Preventable
+
+	column denials
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: denials
+
+	column denied_amt
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denied_amt
+
+	column opportunity
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: opportunity
+
+	partition by_reason = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\by_reason.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"Reason_Description", type text},
+				        {"Reason_Category", type text},
+				        {"Preventable", type text},
+				        {"denials", Int64.Type},
+				        {"denied_amt", type number},
+				        {"opportunity", type number}
+				    })
+				in
+				    Typed

@@ -1,0 +1,61 @@
+table queue
+
+	column Claim_ID
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Claim_ID
+
+	column Payer_ID
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Payer_ID
+
+	column Service_Line
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Service_Line
+
+	column Claim_Amount
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: Claim_Amount
+
+	column Risk_Band
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Risk_Band
+
+	column score
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: score
+
+	column Triggered_Rules
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Triggered_Rules
+
+	column Primary_Owner
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Primary_Owner
+
+	partition queue = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\queue.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"Claim_ID", type text},
+				        {"Payer_ID", type text},
+				        {"Service_Line", type text},
+				        {"Claim_Amount", type number},
+				        {"Risk_Band", type text},
+				        {"score", type number},
+				        {"Triggered_Rules", type text},
+				        {"Primary_Owner", type text}
+				    })
+				in
+				    Typed

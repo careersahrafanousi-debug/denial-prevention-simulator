@@ -1,0 +1,41 @@
+table queue_head
+
+	column queued
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: queued
+
+	column at_risk
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: at_risk
+
+	column high_risk
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: high_risk
+
+	measure 'Claims in pre-submission queue' = SELECTEDVALUE ( 'queue_head'[queued] )
+		formatString: #,0
+		displayFolder: Measures
+		/// Stopped before they become denials
+
+	measure 'Amount at risk in queue' = SELECTEDVALUE ( 'queue_head'[at_risk] )
+		formatString: \$#,0
+		displayFolder: Measures
+		/// Amount at risk in queue from the queue_head query extract.
+
+	partition queue_head = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\queue_head.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"queued", Int64.Type},
+				        {"at_risk", type number},
+				        {"high_risk", Int64.Type}
+				    })
+				in
+				    Typed

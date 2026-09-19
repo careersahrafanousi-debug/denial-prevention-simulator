@@ -1,0 +1,43 @@
+table rules
+
+	column Rule_ID
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Rule_ID
+
+	column Trigger
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Trigger
+
+	column Prevention_Action
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Prevention_Action
+
+	column Owner
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Owner
+
+	column Linked_Denial_Reason
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Linked_Denial_Reason
+
+	partition rules = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\rules.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"Rule_ID", type text},
+				        {"Trigger", type text},
+				        {"Prevention_Action", type text},
+				        {"Owner", type text},
+				        {"Linked_Denial_Reason", type text}
+				    })
+				in
+				    Typed

@@ -1,0 +1,91 @@
+table headline
+
+	column claims
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: claims
+
+	column billed
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: billed
+
+	column denial_pct
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denial_pct
+
+	column denied_amt
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denied_amt
+
+	column preventable_pct
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: preventable_pct
+
+	column opportunity
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: opportunity
+
+	column recovered
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: recovered
+
+	column dq_score
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: dq_score
+
+	measure 'Claims' = SELECTEDVALUE ( 'headline'[claims] )
+		formatString: #,0
+		displayFolder: Measures
+		/// Claims from the headline query extract.
+
+	measure 'Denial rate' = SELECTEDVALUE ( 'headline'[denial_pct] )
+		formatString: 0.00"%"
+		displayFolder: Measures
+		/// Denial rate from the headline query extract.
+
+	measure 'Denied amount' = SELECTEDVALUE ( 'headline'[denied_amt] )
+		formatString: \$#,0
+		displayFolder: Measures
+		/// Denied amount from the headline query extract.
+
+	measure 'Preventable share of denials' = SELECTEDVALUE ( 'headline'[preventable_pct] )
+		formatString: 0.00"%"
+		displayFolder: Measures
+		/// Traceable to a pre-submission control
+
+	measure 'Modelled prevention opportunity' = SELECTEDVALUE ( 'headline'[opportunity] )
+		formatString: \$#,0
+		displayFolder: Measures
+		/// At 100% control effectiveness — not a forecast
+
+	measure 'Recovered on resubmission' = SELECTEDVALUE ( 'headline'[recovered] )
+		formatString: \$#,0
+		displayFolder: Measures
+		/// Recovered on resubmission from the headline query extract.
+
+	partition headline = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\headline.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"claims", Int64.Type},
+				        {"billed", type number},
+				        {"denial_pct", type number},
+				        {"denied_amt", type number},
+				        {"preventable_pct", type number},
+				        {"opportunity", type number},
+				        {"recovered", type number},
+				        {"dq_score", type number}
+				    })
+				in
+				    Typed

@@ -1,0 +1,53 @@
+table resub
+
+	column bucket
+		dataType: string
+		summarizeBy: none
+		sourceColumn: bucket
+
+	column denials
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: denials
+
+	column denied_amt
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denied_amt
+
+	column recovered
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: recovered
+
+	column recovery_pct
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: recovery_pct
+
+	measure 'Denied (resub)' = SUM ( 'resub'[denied_amt] )
+		formatString: #,0.00
+		displayFolder: Measures
+		/// Denied for the 'Recovery on resubmission' visual.
+
+	measure 'Recovered (resub)' = SUM ( 'resub'[recovered] )
+		formatString: #,0.00
+		displayFolder: Measures
+		/// Recovered for the 'Recovery on resubmission' visual.
+
+	partition resub = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\resub.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"bucket", type text},
+				        {"denials", Int64.Type},
+				        {"denied_amt", type number},
+				        {"recovered", type number},
+				        {"recovery_pct", type number}
+				    })
+				in
+				    Typed

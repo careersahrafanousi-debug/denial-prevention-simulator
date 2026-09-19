@@ -1,0 +1,49 @@
+table by_payer
+
+	column Payer_Name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Payer_Name
+
+	column Payer_Type
+		dataType: string
+		summarizeBy: none
+		sourceColumn: Payer_Type
+
+	column claims
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: claims
+
+	column denial_pct
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denial_pct
+
+	column denied_amt
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denied_amt
+
+	column days_outstanding
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: days_outstanding
+
+	partition by_payer = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\by_payer.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"Payer_Name", type text},
+				        {"Payer_Type", type text},
+				        {"claims", Int64.Type},
+				        {"denial_pct", type number},
+				        {"denied_amt", type number},
+				        {"days_outstanding", type number}
+				    })
+				in
+				    Typed

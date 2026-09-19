@@ -1,0 +1,47 @@
+table monthly
+
+	column month
+		dataType: string
+		summarizeBy: none
+		sourceColumn: month
+
+	column claims
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: claims
+
+	column denial_pct
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denial_pct
+
+	column denied_amt
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: denied_amt
+
+	measure 'Claims (monthly)' = SUM ( 'monthly'[claims] )
+		formatString: #,0.00
+		displayFolder: Measures
+		/// Claims for the 'Monthly trend' visual.
+
+	measure 'Denial rate % (monthly)' = AVERAGE ( 'monthly'[denial_pct] )
+		formatString: #,0.00
+		displayFolder: Measures
+		/// Denial rate % for the 'Monthly trend' visual.
+
+	partition monthly = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExtractFolder & "\monthly.csv"),
+				        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {
+				        {"month", type text},
+				        {"claims", Int64.Type},
+				        {"denial_pct", type number},
+				        {"denied_amt", type number}
+				    })
+				in
+				    Typed
