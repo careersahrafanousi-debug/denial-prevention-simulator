@@ -1,0 +1,6 @@
+Rule_ID,Trigger,Prevention_Action,Owner,Linked_Denial_Reason
+PR-01,Authorization_Present = No and auth required,"Hold claim, verify authorization",Authorization team,AUTH-01
+PR-02,Eligibility_Verified = No,Verify active coverage for the date of service,Billing intake,ELIG-01
+PR-03,Documentation_Complete = No,Request missing clinical documentation,Clinical documentation,DOC-01
+PR-04,Coding_Validation_Passed = No,Route to coding review before submission,Coding team,COD-01
+PR-05,Days_To_Submit > 20,Expedite submission review,Billing supervisor,TF-01

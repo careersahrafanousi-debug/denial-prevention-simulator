@@ -1,0 +1,12 @@
+Service_Line,Procedure_Group,Auth_Typically_Required
+Imaging,Advanced Imaging,Yes
+Imaging,Routine Imaging,No
+Surgery,Outpatient Surgery,Yes
+Surgery,Inpatient Surgery,Yes
+Cardiology,Diagnostic Cardiology,Yes
+Orthopedics,Joint Injection,Yes
+Primary Care,Office Visit,No
+Behavioral Health,Therapy Session,No
+Oncology,Infusion Therapy,Yes
+Lab,Routine Lab,No
+Physical Therapy,PT Course,Yes

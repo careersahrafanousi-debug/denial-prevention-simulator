@@ -1,0 +1,13 @@
+Denial_Reason_Code,Reason_Description,Reason_Category,Preventable
+AUTH-01,No prior authorization on file,Authorization,Yes
+AUTH-02,Authorization expired or mismatched,Authorization,Yes
+ELIG-01,Member not eligible on date of service,Eligibility,Yes
+ELIG-02,Coordination of benefits unresolved,Eligibility,Yes
+DOC-01,Medical necessity not documented,Documentation,Yes
+DOC-02,Records not submitted with claim,Documentation,Yes
+COD-01,Invalid or unbundled code combination,Coding,Yes
+COD-02,Modifier missing or invalid,Coding,Yes
+TF-01,Timely filing limit exceeded,Timely Filing,Yes
+CON-01,Non-covered benefit under plan,Coverage,No
+CON-02,Service not medically necessary per policy,Coverage,No
+DUP-01,Duplicate claim,Duplicate,Yes
