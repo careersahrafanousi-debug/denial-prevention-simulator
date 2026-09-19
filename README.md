@@ -3,6 +3,16 @@
 What control should happen *before* a claim goes out, so avoidable denials never enter the
 work queue?
 
+**Live dashboard: [https://careersahrafanousi-debug.github.io/denial-prevention-simulator/dashboard/](https://careersahrafanousi-debug.github.io/denial-prevention-simulator/dashboard/)**
+
+Built by [`src/build_dashboard.py`](src/build_dashboard.py) from the query set in
+[`dashboard/dashboard_config.json`](dashboard/dashboard_config.json), run against `data/claims.db`.
+Every number on the page comes out of a SQL query held in that config file, so the page
+cannot drift away from the analysis in [`sql/`](sql/) — regenerate it with
+`python src/load_sqlite.py && python src/build_dashboard.py`. Chosen over a `.pbix`
+because a reviewer can open a URL and cannot open a binary.
+
+
 Most denial reporting is a post-mortem: here are last month's top denial reasons, go work
 them. This project moves the decision earlier. It scores unsubmitted claims on preventable
 denial risk, maps each failure to a named prevention rule and owner, and separately ranks
@@ -193,7 +203,8 @@ named owner → resolution → submit → denial outcomes feed back into the rul
 - No contract, fee schedule, or patient responsibility dimension.
 - Score weights are unfitted. A logistic regression on production data would almost certainly
   reweight them, and that is the right next step.
-- Power BI `.pbix` not committed; model, measures, and page specs are in
+- No `.pbix` committed. The dashboard is built as a live HTML page at
+  [https://careersahrafanousi-debug.github.io/denial-prevention-simulator/dashboard/](https://careersahrafanousi-debug.github.io/denial-prevention-simulator/dashboard/) by `src/build_dashboard.py`. The Power BI model, measures, and page specs are in
   [`docs/10_dashboard_spec.md`](docs/10_dashboard_spec.md).
 
 ## How to run it
