@@ -1,0 +1,93 @@
+# Dashboard Specification — Denial Prevention Simulator
+
+Target tool: Power BI. The `.pbix` is not committed (binary, no useful diff). Model,
+measures, and pages are specified here so the report can be rebuilt exactly.
+
+## Model
+
+`claims_fact` and `pre_submission_queue` are the fact tables. `dim_payer`,
+`dim_denial_reason`, `dim_service_line`, and `dim_date` filter both in one direction.
+`prevention_rules` is a disconnected table used for the rule-workload visual; the join to
+the queue is done with a `CONTAINSSTRING` measure because `Triggered_Rules` is a
+multi-value field.
+
+`dim_date` relates to `Submission_Date` as the active relationship, with an inactive
+relationship to `Service_Date` used via `USERELATIONSHIP` on service-date visuals.
+
+## Measures (DAX)
+
+```
+Claims = COUNTROWS(claims_fact)
+Billed = SUM(claims_fact[Claim_Amount])
+Denied Dollars = SUM(claims_fact[Denied_Amount])
+Denied Claims = CALCULATE([Claims], claims_fact[Denial_Flag] = "Yes")
+
+Denial Rate % = DIVIDE([Denied Claims], [Claims])
+
+First Pass Acceptance % =
+DIVIDE(CALCULATE([Claims], claims_fact[Claim_Status] = "Paid"), [Claims])
+
+Preventable Denied Dollars =
+CALCULATE([Denied Dollars], claims_fact[Preventable_Flag] = "Yes")
+
+Preventable Denial Rate % =
+DIVIDE(CALCULATE([Denied Claims], claims_fact[Preventable_Flag] = "Yes"), [Denied Claims])
+
+Recovered = SUM(claims_fact[Recovery_Amount])
+Net Denied = [Denied Dollars] - [Recovered]
+Prevention Opportunity = SUM(claims_fact[Prevention_Opportunity])
+
+High Risk Pending = CALCULATE(COUNTROWS(pre_submission_queue),
+                              pre_submission_queue[Risk_Band] = "High")
+Dollars At Risk = SUM(pre_submission_queue[At_Risk_Amount])
+
+-- probability used by the simulator, taken from history not assumed
+High Risk Denial P =
+CALCULATE(DIVIDE([Denied Claims], [Claims]), claims_fact[Risk_Band] = "High")
+
+Modeled Avoided Exposure =
+[Dollars At Risk] * [High Risk Denial P] * DIVIDE(SELECTEDVALUE(Coverage[Level]), 100)
+```
+
+`Coverage` is a small what-if parameter table with values 50, 70, 90.
+
+## Pages
+
+### 1. Revenue Cycle Overview
+Cards: claims, billed, denial rate, denied dollars, first-pass acceptance, preventable
+denial rate, net denied after recovery.
+Monthly column chart of claims with denial rate as a line. Denied dollars by payer bar.
+Denial rate by service line bar.
+
+### 2. Denial Root Causes
+Pareto: denied dollars by reason with cumulative share line. Matrix heat map of payer by
+service line with denial rate as the value and denied dollars in the tooltip. Preventable vs
+non-preventable donut with dollars and counts. Failure-combination table from query 7.
+
+### 3. Pre-Submission Risk Queue
+Operational table: claim ID, payer, service line, procedure group, charge, risk score, band,
+triggered rules, owner, days held. Conditional formatting: High red, Medium amber. Default
+sort score descending then charge descending. Slicers for owner and rule ID. Cards for
+high-risk claim count and dollars at risk.
+
+### 4. Recovery Prioritization
+Denied claims with no recovery yet, ranked by recovery priority. Columns: claim, payer,
+reason, preventable flag, denied amount, days outstanding, priority score, work queue.
+Aging bar by bucket. Scatter of denied amount against days outstanding, sized by priority.
+Drill-through shows the four priority components.
+
+### 5. Control Effectiveness Simulator
+What-if slicer for coverage level. Cards: high-risk claims, dollars at risk, modeled denied
+exposure, modeled avoided exposure. Waterfall showing at-risk dollars, modeled denials,
+modeled avoided. A visible text box stating the probability used and that all figures are
+modeled, not forecast.
+
+### 6. Data Quality
+Data Quality Score card. Exceptions by severity and by rule. Open exception table with owner
+and status. Reconciliation card: records in, records reported, records blocked.
+
+## Interaction rules
+
+- Every rate visual exposes its denominator in the tooltip.
+- The pre-submission queue ignores the status slicer; it is always unsubmitted claims only.
+- The simulator page carries a permanent caveat text box. It is not optional.
