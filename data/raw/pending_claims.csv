@@ -1,0 +1,901 @@
+Claim_ID,Service_Date,Payer_ID,Service_Line,Procedure_Group,Claim_Amount,Auth_Required,Authorization_Present,Eligibility_Verified,Documentation_Complete,Coding_Validation_Passed,Days_To_Submit,Claim_Status
+CLM-2026-P00001,2026-09-02,PAY-07,Cardiology,Diagnostic Cardiology,3210.95,Yes,Yes,Yes,No,Yes,22,Not Submitted
+CLM-2026-P00002,2026-08-24,PAY-04,Primary Care,Office Visit,126.36,No,Yes,No,Yes,Yes,15,Not Submitted
+CLM-2026-P00003,2026-08-29,PAY-04,Orthopedics,Joint Injection,822.83,Yes,Yes,Yes,No,Yes,29,Not Submitted
+CLM-2026-P00004,2026-09-01,PAY-01,Cardiology,Diagnostic Cardiology,2340.98,Yes,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00005,2026-08-27,PAY-05,Primary Care,Office Visit,235.18,No,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00006,2026-08-23,PAY-06,Cardiology,Diagnostic Cardiology,2210.72,Yes,No,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00007,2026-08-28,PAY-04,Cardiology,Diagnostic Cardiology,2839.87,Yes,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00008,2026-08-27,PAY-06,Physical Therapy,PT Course,176.11,Yes,No,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00009,2026-09-02,PAY-04,Physical Therapy,PT Course,157.13,Yes,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00010,2026-09-02,PAY-03,Cardiology,Diagnostic Cardiology,1882.42,Yes,Yes,Yes,Yes,No,11,Not Submitted
+CLM-2026-P00011,2026-09-01,PAY-03,Physical Therapy,PT Course,329.57,Yes,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00012,2026-08-24,PAY-03,Surgery,Inpatient Surgery,29297.23,Yes,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00013,2026-08-21,PAY-06,Lab,Routine Lab,53.64,No,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00014,2026-08-28,PAY-03,Cardiology,Diagnostic Cardiology,2586.15,Yes,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00015,2026-08-30,PAY-07,Lab,Routine Lab,94.83,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00016,2026-08-30,PAY-07,Surgery,Inpatient Surgery,32589.45,Yes,Yes,Yes,No,Yes,10,Not Submitted
+CLM-2026-P00017,2026-08-22,PAY-04,Primary Care,Office Visit,147.12,No,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00018,2026-08-26,PAY-02,Imaging,Advanced Imaging,1725.77,Yes,Yes,Yes,Yes,No,7,Not Submitted
+CLM-2026-P00019,2026-09-01,PAY-03,Imaging,Routine Imaging,276.1,No,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00020,2026-09-01,PAY-01,Surgery,Outpatient Surgery,7011.53,Yes,Yes,Yes,No,Yes,9,Not Submitted
+CLM-2026-P00021,2026-08-22,PAY-04,Surgery,Inpatient Surgery,10687.81,Yes,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00022,2026-08-26,PAY-01,Imaging,Routine Imaging,293.81,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00023,2026-08-25,PAY-03,Surgery,Outpatient Surgery,6832.69,Yes,Yes,No,Yes,Yes,30,Not Submitted
+CLM-2026-P00024,2026-08-23,PAY-03,Imaging,Advanced Imaging,2239.11,Yes,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00025,2026-09-03,PAY-04,Primary Care,Office Visit,141.93,No,Yes,No,No,Yes,19,Not Submitted
+CLM-2026-P00026,2026-09-03,PAY-03,Imaging,Routine Imaging,330.87,No,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00027,2026-08-27,PAY-02,Imaging,Advanced Imaging,1711.49,Yes,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00028,2026-08-25,PAY-05,Imaging,Advanced Imaging,1371.25,Yes,No,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00029,2026-08-23,PAY-04,Oncology,Infusion Therapy,15426.33,Yes,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00030,2026-08-28,PAY-03,Imaging,Routine Imaging,313.21,No,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00031,2026-08-24,PAY-06,Lab,Routine Lab,123.77,No,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00032,2026-09-01,PAY-04,Oncology,Infusion Therapy,26953.8,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00033,2026-08-22,PAY-01,Surgery,Outpatient Surgery,10716.13,Yes,Yes,No,Yes,Yes,23,Not Submitted
+CLM-2026-P00034,2026-08-26,PAY-02,Physical Therapy,PT Course,337.09,Yes,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00035,2026-08-31,PAY-06,Imaging,Routine Imaging,860.63,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00036,2026-09-01,PAY-01,Surgery,Inpatient Surgery,19063.28,Yes,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00037,2026-08-30,PAY-01,Imaging,Advanced Imaging,2215.16,Yes,No,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00038,2026-09-03,PAY-02,Surgery,Outpatient Surgery,7635.68,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00039,2026-08-31,PAY-05,Physical Therapy,PT Course,460.12,Yes,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00040,2026-08-30,PAY-04,Surgery,Outpatient Surgery,19106.72,Yes,Yes,Yes,No,Yes,22,Not Submitted
+CLM-2026-P00041,2026-08-27,PAY-01,Lab,Routine Lab,163.77,No,Yes,Yes,No,Yes,21,Not Submitted
+CLM-2026-P00042,2026-08-22,PAY-02,Surgery,Outpatient Surgery,4622.31,Yes,Yes,Yes,Yes,No,16,Not Submitted
+CLM-2026-P00043,2026-08-24,PAY-04,Orthopedics,Joint Injection,1493.24,Yes,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00044,2026-08-21,PAY-01,Surgery,Outpatient Surgery,11237.17,Yes,Yes,No,Yes,Yes,26,Not Submitted
+CLM-2026-P00045,2026-08-30,PAY-01,Primary Care,Office Visit,160.42,No,Yes,Yes,No,Yes,13,Not Submitted
+CLM-2026-P00046,2026-08-23,PAY-01,Imaging,Advanced Imaging,1167.33,Yes,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00047,2026-08-26,PAY-01,Orthopedics,Joint Injection,709.65,Yes,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00048,2026-08-25,PAY-07,Primary Care,Office Visit,241.68,No,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00049,2026-08-23,PAY-04,Imaging,Routine Imaging,453.28,No,Yes,Yes,Yes,No,1,Not Submitted
+CLM-2026-P00050,2026-08-25,PAY-04,Imaging,Advanced Imaging,1893.94,Yes,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00051,2026-08-25,PAY-06,Imaging,Advanced Imaging,2843.68,Yes,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00052,2026-09-02,PAY-04,Primary Care,Office Visit,122.09,No,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00053,2026-08-23,PAY-01,Behavioral Health,Therapy Session,205.14,No,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00054,2026-09-03,PAY-04,Orthopedics,Joint Injection,1103.86,Yes,Yes,Yes,No,Yes,17,Not Submitted
+CLM-2026-P00055,2026-09-02,PAY-03,Surgery,Outpatient Surgery,10369.63,Yes,No,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00056,2026-08-28,PAY-02,Physical Therapy,PT Course,313.79,Yes,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00057,2026-08-30,PAY-03,Lab,Routine Lab,93.17,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00058,2026-09-03,PAY-01,Lab,Routine Lab,44.09,No,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00059,2026-09-02,PAY-03,Lab,Routine Lab,93.96,No,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00060,2026-08-23,PAY-02,Orthopedics,Joint Injection,1190.66,Yes,Yes,No,Yes,Yes,25,Not Submitted
+CLM-2026-P00061,2026-09-02,PAY-02,Imaging,Advanced Imaging,2667.6,Yes,Yes,No,Yes,Yes,4,Not Submitted
+CLM-2026-P00062,2026-08-27,PAY-01,Imaging,Advanced Imaging,1384.09,Yes,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00063,2026-09-01,PAY-02,Imaging,Routine Imaging,450.05,No,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00064,2026-09-01,PAY-01,Primary Care,Office Visit,176.88,No,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00065,2026-09-01,PAY-01,Primary Care,Office Visit,186.59,No,Yes,Yes,Yes,No,5,Not Submitted
+CLM-2026-P00066,2026-08-31,PAY-04,Behavioral Health,Therapy Session,122.32,No,Yes,Yes,No,Yes,23,Not Submitted
+CLM-2026-P00067,2026-08-29,PAY-04,Surgery,Inpatient Surgery,17276.28,Yes,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00068,2026-08-23,PAY-03,Primary Care,Office Visit,255.61,No,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00069,2026-08-27,PAY-03,Orthopedics,Joint Injection,869.37,Yes,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00070,2026-09-01,PAY-03,Primary Care,Office Visit,247.72,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00071,2026-08-29,PAY-04,Physical Therapy,PT Course,397.55,Yes,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00072,2026-08-26,PAY-02,Cardiology,Diagnostic Cardiology,3846.2,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00073,2026-08-23,PAY-01,Cardiology,Diagnostic Cardiology,970.48,Yes,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00074,2026-09-03,PAY-01,Imaging,Advanced Imaging,2692.24,Yes,Yes,No,Yes,Yes,34,Not Submitted
+CLM-2026-P00075,2026-08-28,PAY-01,Oncology,Infusion Therapy,11032.77,Yes,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00076,2026-08-29,PAY-04,Primary Care,Office Visit,202.21,No,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00077,2026-08-26,PAY-05,Imaging,Advanced Imaging,1603.13,Yes,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00078,2026-08-26,PAY-05,Primary Care,Office Visit,248.88,No,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00079,2026-08-26,PAY-04,Imaging,Routine Imaging,369.99,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00080,2026-08-31,PAY-06,Primary Care,Office Visit,107.79,No,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00081,2026-08-24,PAY-04,Surgery,Inpatient Surgery,19270.15,Yes,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00082,2026-08-25,PAY-03,Surgery,Outpatient Surgery,9032.23,Yes,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00083,2026-08-31,PAY-04,Surgery,Outpatient Surgery,4461.94,Yes,No,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00084,2026-08-29,PAY-07,Orthopedics,Joint Injection,906.74,Yes,No,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00085,2026-08-31,PAY-01,Cardiology,Diagnostic Cardiology,2443.52,Yes,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00086,2026-09-03,PAY-03,Orthopedics,Joint Injection,1178.12,Yes,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00087,2026-08-28,PAY-07,Physical Therapy,PT Course,430.65,Yes,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00088,2026-08-25,PAY-03,Primary Care,Office Visit,134.89,No,Yes,Yes,Yes,No,6,Not Submitted
+CLM-2026-P00089,2026-08-27,PAY-05,Behavioral Health,Therapy Session,331.75,No,Yes,No,Yes,Yes,33,Not Submitted
+CLM-2026-P00090,2026-08-23,PAY-02,Surgery,Inpatient Surgery,24094.56,Yes,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00091,2026-09-01,PAY-03,Lab,Routine Lab,123.75,No,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00092,2026-08-21,PAY-03,Physical Therapy,PT Course,363.22,Yes,Yes,No,No,Yes,22,Not Submitted
+CLM-2026-P00093,2026-08-21,PAY-04,Orthopedics,Joint Injection,1059.49,Yes,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00094,2026-09-02,PAY-01,Behavioral Health,Therapy Session,126.51,No,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00095,2026-09-02,PAY-02,Orthopedics,Joint Injection,711.57,Yes,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00096,2026-08-26,PAY-01,Imaging,Advanced Imaging,1422.57,Yes,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00097,2026-08-31,PAY-02,Surgery,Outpatient Surgery,6538.76,Yes,No,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00098,2026-08-24,PAY-01,Imaging,Advanced Imaging,1284.39,Yes,No,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00099,2026-08-23,PAY-07,Lab,Routine Lab,133.09,No,Yes,Yes,Yes,No,32,Not Submitted
+CLM-2026-P00100,2026-08-25,PAY-01,Cardiology,Diagnostic Cardiology,2897.37,Yes,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00101,2026-08-24,PAY-07,Oncology,Infusion Therapy,8468.59,Yes,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00102,2026-08-31,PAY-01,Primary Care,Office Visit,147.14,No,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00103,2026-08-27,PAY-03,Imaging,Routine Imaging,520.76,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00104,2026-09-01,PAY-05,Surgery,Outpatient Surgery,6408.89,Yes,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00105,2026-08-23,PAY-06,Lab,Routine Lab,87.23,No,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00106,2026-08-29,PAY-02,Surgery,Inpatient Surgery,39916.21,Yes,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00107,2026-09-03,PAY-06,Behavioral Health,Therapy Session,235.72,No,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00108,2026-09-03,PAY-02,Surgery,Inpatient Surgery,23691.97,Yes,No,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00109,2026-08-28,PAY-02,Surgery,Outpatient Surgery,6019.63,Yes,Yes,Yes,Yes,Yes,20,Not Submitted
+CLM-2026-P00110,2026-08-23,PAY-01,Physical Therapy,PT Course,281.72,Yes,No,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00111,2026-09-01,PAY-01,Surgery,Outpatient Surgery,7153.92,Yes,No,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00112,2026-08-29,PAY-03,Physical Therapy,PT Course,207.43,Yes,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00113,2026-09-02,PAY-04,Imaging,Routine Imaging,381.35,No,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00114,2026-09-02,PAY-02,Physical Therapy,PT Course,292.04,Yes,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00115,2026-08-31,PAY-01,Cardiology,Diagnostic Cardiology,2417.96,Yes,Yes,Yes,Yes,No,4,Not Submitted
+CLM-2026-P00116,2026-08-29,PAY-07,Lab,Routine Lab,136.52,No,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00117,2026-09-03,PAY-06,Imaging,Advanced Imaging,1928.77,Yes,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00118,2026-08-25,PAY-02,Lab,Routine Lab,58.24,No,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00119,2026-08-26,PAY-06,Imaging,Advanced Imaging,2251.35,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00120,2026-08-22,PAY-01,Lab,Routine Lab,81.24,No,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00121,2026-08-24,PAY-06,Oncology,Infusion Therapy,13734.61,Yes,No,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00122,2026-08-21,PAY-07,Imaging,Routine Imaging,256.08,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00123,2026-08-25,PAY-03,Imaging,Routine Imaging,681.27,No,Yes,Yes,Yes,Yes,20,Not Submitted
+CLM-2026-P00124,2026-08-21,PAY-03,Imaging,Advanced Imaging,1122.61,Yes,Yes,No,Yes,Yes,29,Not Submitted
+CLM-2026-P00125,2026-08-22,PAY-07,Imaging,Advanced Imaging,1762.48,Yes,No,Yes,Yes,No,6,Not Submitted
+CLM-2026-P00126,2026-09-01,PAY-06,Cardiology,Diagnostic Cardiology,2825.68,Yes,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00127,2026-08-31,PAY-04,Lab,Routine Lab,83.56,No,Yes,No,Yes,Yes,28,Not Submitted
+CLM-2026-P00128,2026-08-29,PAY-06,Physical Therapy,PT Course,256.25,Yes,Yes,Yes,No,Yes,10,Not Submitted
+CLM-2026-P00129,2026-08-24,PAY-01,Physical Therapy,PT Course,293.13,Yes,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00130,2026-08-31,PAY-06,Physical Therapy,PT Course,284.89,Yes,No,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00131,2026-08-27,PAY-04,Primary Care,Office Visit,113.32,No,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00132,2026-08-23,PAY-04,Primary Care,Office Visit,133.18,No,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00133,2026-08-27,PAY-03,Surgery,Outpatient Surgery,7276.83,Yes,Yes,No,Yes,Yes,22,Not Submitted
+CLM-2026-P00134,2026-08-31,PAY-04,Surgery,Outpatient Surgery,11120.57,Yes,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00135,2026-08-27,PAY-04,Behavioral Health,Therapy Session,190.29,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00136,2026-08-22,PAY-04,Behavioral Health,Therapy Session,161.03,No,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00137,2026-08-25,PAY-03,Lab,Routine Lab,112.15,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00138,2026-08-31,PAY-03,Cardiology,Diagnostic Cardiology,2468.5,Yes,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00139,2026-08-31,PAY-03,Behavioral Health,Therapy Session,167.39,No,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00140,2026-08-23,PAY-05,Primary Care,Office Visit,98.3,No,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00141,2026-08-28,PAY-07,Primary Care,Office Visit,254.49,No,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00142,2026-08-26,PAY-04,Surgery,Outpatient Surgery,17923.71,Yes,No,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00143,2026-08-26,PAY-04,Behavioral Health,Therapy Session,219.23,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00144,2026-08-23,PAY-04,Imaging,Routine Imaging,656.93,No,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00145,2026-08-25,PAY-02,Orthopedics,Joint Injection,790.29,Yes,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00146,2026-08-23,PAY-07,Cardiology,Diagnostic Cardiology,2085.95,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00147,2026-08-31,PAY-01,Physical Therapy,PT Course,265.96,Yes,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00148,2026-08-28,PAY-01,Surgery,Outpatient Surgery,8013.08,Yes,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00149,2026-08-29,PAY-01,Imaging,Advanced Imaging,2498.39,Yes,Yes,Yes,No,Yes,11,Not Submitted
+CLM-2026-P00150,2026-08-26,PAY-01,Physical Therapy,PT Course,248.42,Yes,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00151,2026-08-24,PAY-02,Primary Care,Office Visit,165.75,No,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00152,2026-08-22,PAY-01,Primary Care,Office Visit,134.17,No,Yes,No,No,Yes,24,Not Submitted
+CLM-2026-P00153,2026-08-29,PAY-05,Imaging,Advanced Imaging,2617.39,Yes,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00154,2026-08-25,PAY-03,Imaging,Advanced Imaging,1703.38,Yes,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00155,2026-09-02,PAY-03,Imaging,Advanced Imaging,1810.28,Yes,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00156,2026-08-21,PAY-07,Oncology,Infusion Therapy,5574.65,Yes,No,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00157,2026-08-21,PAY-02,Cardiology,Diagnostic Cardiology,2564.63,Yes,Yes,No,Yes,Yes,7,Not Submitted
+CLM-2026-P00158,2026-08-31,PAY-02,Oncology,Infusion Therapy,14648.17,Yes,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00159,2026-09-01,PAY-04,Imaging,Advanced Imaging,4382.44,Yes,Yes,No,Yes,Yes,5,Not Submitted
+CLM-2026-P00160,2026-08-28,PAY-03,Imaging,Advanced Imaging,2221.52,Yes,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00161,2026-08-31,PAY-03,Imaging,Advanced Imaging,2184.64,Yes,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00162,2026-08-31,PAY-04,Physical Therapy,PT Course,416.98,Yes,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00163,2026-08-22,PAY-02,Primary Care,Office Visit,112.61,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00164,2026-08-27,PAY-01,Surgery,Inpatient Surgery,15252.23,Yes,No,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00165,2026-08-24,PAY-07,Lab,Routine Lab,80.93,No,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00166,2026-08-28,PAY-02,Orthopedics,Joint Injection,1018.66,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00167,2026-08-28,PAY-02,Imaging,Advanced Imaging,1448.03,Yes,No,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00168,2026-09-03,PAY-04,Physical Therapy,PT Course,165.81,Yes,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00169,2026-08-21,PAY-06,Physical Therapy,PT Course,457.31,Yes,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00170,2026-08-21,PAY-03,Primary Care,Office Visit,179.01,No,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00171,2026-08-25,PAY-06,Imaging,Routine Imaging,331.05,No,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00172,2026-08-22,PAY-04,Oncology,Infusion Therapy,9097.99,Yes,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00173,2026-08-27,PAY-02,Imaging,Routine Imaging,237.45,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00174,2026-09-02,PAY-06,Primary Care,Office Visit,113.35,No,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00175,2026-08-29,PAY-03,Orthopedics,Joint Injection,811.47,Yes,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00176,2026-09-02,PAY-04,Behavioral Health,Therapy Session,127.51,No,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00177,2026-08-30,PAY-03,Behavioral Health,Therapy Session,181.67,No,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00178,2026-08-30,PAY-03,Primary Care,Office Visit,401.2,No,Yes,No,Yes,Yes,8,Not Submitted
+CLM-2026-P00179,2026-09-02,PAY-03,Behavioral Health,Therapy Session,131.47,No,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00180,2026-08-25,PAY-01,Imaging,Routine Imaging,403.14,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00181,2026-09-02,PAY-05,Imaging,Routine Imaging,447.39,No,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00182,2026-08-25,PAY-02,Physical Therapy,PT Course,335.43,Yes,Yes,No,Yes,Yes,7,Not Submitted
+CLM-2026-P00183,2026-08-22,PAY-01,Imaging,Routine Imaging,468.73,No,Yes,No,Yes,Yes,26,Not Submitted
+CLM-2026-P00184,2026-08-25,PAY-01,Imaging,Routine Imaging,353.1,No,Yes,Yes,Yes,No,26,Not Submitted
+CLM-2026-P00185,2026-08-25,PAY-04,Primary Care,Office Visit,123.45,No,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00186,2026-09-03,PAY-07,Imaging,Advanced Imaging,1964.26,Yes,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00187,2026-08-22,PAY-01,Oncology,Infusion Therapy,20893.43,Yes,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00188,2026-09-03,PAY-06,Primary Care,Office Visit,223.23,No,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00189,2026-09-03,PAY-04,Cardiology,Diagnostic Cardiology,1207.0,Yes,Yes,No,Yes,Yes,5,Not Submitted
+CLM-2026-P00190,2026-08-28,PAY-04,Lab,Routine Lab,115.04,No,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00191,2026-08-29,PAY-04,Surgery,Outpatient Surgery,9835.95,Yes,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00192,2026-08-21,PAY-05,Imaging,Routine Imaging,332.95,No,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00193,2026-08-28,PAY-02,Lab,Routine Lab,81.23,No,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00194,2026-09-02,PAY-02,Primary Care,Office Visit,349.61,No,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00195,2026-08-24,PAY-04,Surgery,Outpatient Surgery,14884.73,Yes,No,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00196,2026-08-31,PAY-04,Surgery,Outpatient Surgery,3520.3,Yes,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00197,2026-08-29,PAY-03,Surgery,Inpatient Surgery,28362.33,Yes,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00198,2026-09-03,PAY-01,Imaging,Routine Imaging,602.95,No,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00199,2026-08-26,PAY-03,Cardiology,Diagnostic Cardiology,3257.75,Yes,Yes,Yes,No,Yes,19,Not Submitted
+CLM-2026-P00200,2026-09-03,PAY-06,Primary Care,Office Visit,373.03,No,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00201,2026-08-23,PAY-04,Behavioral Health,Therapy Session,356.86,No,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00202,2026-09-02,PAY-01,Lab,Routine Lab,97.67,No,Yes,No,Yes,Yes,22,Not Submitted
+CLM-2026-P00203,2026-09-03,PAY-02,Oncology,Infusion Therapy,4214.97,Yes,Yes,No,Yes,Yes,13,Not Submitted
+CLM-2026-P00204,2026-08-25,PAY-04,Oncology,Infusion Therapy,8507.37,Yes,Yes,No,No,Yes,20,Not Submitted
+CLM-2026-P00205,2026-08-21,PAY-04,Imaging,Routine Imaging,493.29,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00206,2026-08-29,PAY-07,Primary Care,Office Visit,158.94,No,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00207,2026-08-31,PAY-03,Orthopedics,Joint Injection,1212.47,Yes,No,Yes,No,Yes,21,Not Submitted
+CLM-2026-P00208,2026-08-27,PAY-02,Imaging,Advanced Imaging,1141.46,Yes,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00209,2026-08-22,PAY-02,Lab,Routine Lab,93.59,No,Yes,Yes,No,No,5,Not Submitted
+CLM-2026-P00210,2026-08-21,PAY-05,Primary Care,Office Visit,166.68,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00211,2026-08-29,PAY-06,Behavioral Health,Therapy Session,288.53,No,Yes,No,Yes,Yes,20,Not Submitted
+CLM-2026-P00212,2026-08-27,PAY-06,Surgery,Inpatient Surgery,18135.92,Yes,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00213,2026-08-26,PAY-03,Primary Care,Office Visit,145.01,No,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00214,2026-08-25,PAY-02,Primary Care,Office Visit,165.46,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00215,2026-08-31,PAY-05,Behavioral Health,Therapy Session,213.0,No,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00216,2026-08-30,PAY-07,Primary Care,Office Visit,212.83,No,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00217,2026-08-26,PAY-06,Primary Care,Office Visit,172.39,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00218,2026-09-01,PAY-03,Surgery,Outpatient Surgery,7709.77,Yes,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00219,2026-08-27,PAY-01,Primary Care,Office Visit,151.48,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00220,2026-08-27,PAY-01,Primary Care,Office Visit,241.73,No,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00221,2026-08-27,PAY-03,Imaging,Advanced Imaging,1349.57,Yes,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00222,2026-08-27,PAY-05,Cardiology,Diagnostic Cardiology,1834.04,Yes,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00223,2026-08-30,PAY-01,Imaging,Routine Imaging,251.95,No,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00224,2026-08-24,PAY-02,Primary Care,Office Visit,172.4,No,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00225,2026-09-03,PAY-05,Imaging,Advanced Imaging,1913.49,Yes,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00226,2026-09-03,PAY-01,Physical Therapy,PT Course,328.48,Yes,Yes,No,Yes,Yes,32,Not Submitted
+CLM-2026-P00227,2026-09-02,PAY-01,Physical Therapy,PT Course,335.63,Yes,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00228,2026-08-26,PAY-01,Lab,Routine Lab,119.28,No,Yes,Yes,No,Yes,25,Not Submitted
+CLM-2026-P00229,2026-08-31,PAY-03,Physical Therapy,PT Course,306.8,Yes,Yes,Yes,No,Yes,25,Not Submitted
+CLM-2026-P00230,2026-08-22,PAY-07,Orthopedics,Joint Injection,1694.62,Yes,Yes,No,Yes,Yes,33,Not Submitted
+CLM-2026-P00231,2026-08-30,PAY-06,Imaging,Advanced Imaging,1091.34,Yes,No,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00232,2026-08-25,PAY-06,Primary Care,Office Visit,113.61,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00233,2026-08-26,PAY-03,Behavioral Health,Therapy Session,283.65,No,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00234,2026-08-27,PAY-01,Physical Therapy,PT Course,282.6,Yes,No,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00235,2026-08-23,PAY-03,Lab,Routine Lab,92.15,No,Yes,No,Yes,Yes,14,Not Submitted
+CLM-2026-P00236,2026-08-31,PAY-01,Primary Care,Office Visit,263.9,No,Yes,Yes,Yes,No,4,Not Submitted
+CLM-2026-P00237,2026-09-01,PAY-01,Imaging,Routine Imaging,298.39,No,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00238,2026-08-21,PAY-02,Surgery,Inpatient Surgery,23149.07,Yes,Yes,No,Yes,Yes,6,Not Submitted
+CLM-2026-P00239,2026-08-30,PAY-04,Surgery,Outpatient Surgery,5841.22,Yes,Yes,No,Yes,Yes,20,Not Submitted
+CLM-2026-P00240,2026-08-27,PAY-03,Behavioral Health,Therapy Session,110.81,No,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00241,2026-09-02,PAY-03,Physical Therapy,PT Course,432.24,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00242,2026-08-21,PAY-05,Orthopedics,Joint Injection,1277.25,Yes,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00243,2026-09-01,PAY-04,Behavioral Health,Therapy Session,135.34,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00244,2026-08-26,PAY-02,Cardiology,Diagnostic Cardiology,2938.39,Yes,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00245,2026-08-30,PAY-02,Primary Care,Office Visit,252.07,No,Yes,Yes,Yes,No,34,Not Submitted
+CLM-2026-P00246,2026-08-26,PAY-07,Orthopedics,Joint Injection,1243.15,Yes,Yes,No,Yes,Yes,15,Not Submitted
+CLM-2026-P00247,2026-08-27,PAY-01,Primary Care,Office Visit,168.84,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00248,2026-08-28,PAY-02,Imaging,Advanced Imaging,2402.44,Yes,Yes,Yes,Yes,No,1,Not Submitted
+CLM-2026-P00249,2026-08-30,PAY-01,Physical Therapy,PT Course,357.65,Yes,Yes,Yes,No,No,28,Not Submitted
+CLM-2026-P00250,2026-08-27,PAY-01,Physical Therapy,PT Course,362.19,Yes,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00251,2026-08-26,PAY-05,Cardiology,Diagnostic Cardiology,3711.9,Yes,Yes,Yes,Yes,No,24,Not Submitted
+CLM-2026-P00252,2026-08-27,PAY-02,Imaging,Routine Imaging,846.06,No,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00253,2026-08-26,PAY-04,Physical Therapy,PT Course,366.1,Yes,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00254,2026-08-23,PAY-04,Behavioral Health,Therapy Session,198.32,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00255,2026-08-22,PAY-02,Surgery,Outpatient Surgery,5784.76,Yes,Yes,Yes,No,No,8,Not Submitted
+CLM-2026-P00256,2026-08-25,PAY-01,Physical Therapy,PT Course,235.61,Yes,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00257,2026-08-29,PAY-01,Surgery,Inpatient Surgery,38350.28,Yes,No,Yes,No,Yes,12,Not Submitted
+CLM-2026-P00258,2026-08-23,PAY-04,Primary Care,Office Visit,152.26,No,Yes,Yes,No,Yes,9,Not Submitted
+CLM-2026-P00259,2026-09-03,PAY-03,Primary Care,Office Visit,248.61,No,Yes,No,Yes,Yes,4,Not Submitted
+CLM-2026-P00260,2026-08-30,PAY-07,Surgery,Inpatient Surgery,35837.55,Yes,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00261,2026-08-22,PAY-04,Surgery,Inpatient Surgery,18053.22,Yes,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00262,2026-09-03,PAY-01,Imaging,Advanced Imaging,3503.94,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00263,2026-08-21,PAY-03,Lab,Routine Lab,102.37,No,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00264,2026-09-02,PAY-03,Orthopedics,Joint Injection,1562.13,Yes,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00265,2026-08-31,PAY-04,Physical Therapy,PT Course,267.17,Yes,No,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00266,2026-08-30,PAY-03,Primary Care,Office Visit,213.54,No,Yes,No,Yes,Yes,34,Not Submitted
+CLM-2026-P00267,2026-08-24,PAY-02,Imaging,Routine Imaging,294.34,No,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00268,2026-08-26,PAY-01,Lab,Routine Lab,112.94,No,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00269,2026-08-26,PAY-05,Primary Care,Office Visit,275.76,No,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00270,2026-08-28,PAY-05,Lab,Routine Lab,46.59,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00271,2026-09-03,PAY-06,Primary Care,Office Visit,232.51,No,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00272,2026-08-31,PAY-02,Orthopedics,Joint Injection,1074.15,Yes,Yes,Yes,No,Yes,7,Not Submitted
+CLM-2026-P00273,2026-08-28,PAY-02,Primary Care,Office Visit,383.64,No,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00274,2026-08-28,PAY-03,Physical Therapy,PT Course,162.09,Yes,Yes,Yes,Yes,No,17,Not Submitted
+CLM-2026-P00275,2026-08-23,PAY-05,Primary Care,Office Visit,302.68,No,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00276,2026-08-28,PAY-03,Primary Care,Office Visit,285.26,No,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00277,2026-08-23,PAY-06,Cardiology,Diagnostic Cardiology,3013.87,Yes,No,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00278,2026-08-27,PAY-07,Surgery,Outpatient Surgery,4416.42,Yes,Yes,Yes,No,Yes,23,Not Submitted
+CLM-2026-P00279,2026-08-30,PAY-06,Surgery,Outpatient Surgery,6038.68,Yes,Yes,Yes,Yes,Yes,20,Not Submitted
+CLM-2026-P00280,2026-08-25,PAY-04,Surgery,Outpatient Surgery,6958.68,Yes,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00281,2026-09-03,PAY-03,Imaging,Advanced Imaging,3148.56,Yes,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00282,2026-08-31,PAY-01,Imaging,Advanced Imaging,4158.5,Yes,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00283,2026-08-30,PAY-05,Orthopedics,Joint Injection,974.5,Yes,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00284,2026-09-02,PAY-05,Imaging,Routine Imaging,562.34,No,Yes,No,Yes,Yes,32,Not Submitted
+CLM-2026-P00285,2026-08-26,PAY-05,Behavioral Health,Therapy Session,280.4,No,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00286,2026-09-02,PAY-03,Orthopedics,Joint Injection,1125.9,Yes,Yes,Yes,Yes,Yes,20,Not Submitted
+CLM-2026-P00287,2026-08-25,PAY-03,Imaging,Advanced Imaging,1162.03,Yes,Yes,Yes,Yes,No,7,Not Submitted
+CLM-2026-P00288,2026-09-03,PAY-03,Primary Care,Office Visit,97.98,No,Yes,Yes,No,Yes,0,Not Submitted
+CLM-2026-P00289,2026-08-27,PAY-03,Primary Care,Office Visit,257.27,No,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00290,2026-08-25,PAY-01,Oncology,Infusion Therapy,14425.55,Yes,No,No,Yes,Yes,4,Not Submitted
+CLM-2026-P00291,2026-08-22,PAY-04,Surgery,Outpatient Surgery,7033.76,Yes,No,Yes,No,Yes,19,Not Submitted
+CLM-2026-P00292,2026-09-01,PAY-03,Imaging,Routine Imaging,337.61,No,Yes,Yes,Yes,Yes,20,Not Submitted
+CLM-2026-P00293,2026-08-29,PAY-01,Imaging,Advanced Imaging,1960.07,Yes,Yes,Yes,No,Yes,27,Not Submitted
+CLM-2026-P00294,2026-08-26,PAY-02,Cardiology,Diagnostic Cardiology,2621.35,Yes,Yes,No,Yes,Yes,34,Not Submitted
+CLM-2026-P00295,2026-09-02,PAY-03,Surgery,Outpatient Surgery,10863.19,Yes,Yes,Yes,Yes,No,12,Not Submitted
+CLM-2026-P00296,2026-08-30,PAY-05,Behavioral Health,Therapy Session,362.5,No,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00297,2026-08-27,PAY-01,Imaging,Routine Imaging,439.03,No,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00298,2026-08-31,PAY-03,Lab,Routine Lab,137.89,No,Yes,Yes,No,Yes,10,Not Submitted
+CLM-2026-P00299,2026-08-22,PAY-06,Cardiology,Diagnostic Cardiology,1663.65,Yes,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00300,2026-09-03,PAY-04,Oncology,Infusion Therapy,11272.92,Yes,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00301,2026-08-26,PAY-01,Surgery,Outpatient Surgery,7753.11,Yes,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00302,2026-08-30,PAY-05,Primary Care,Office Visit,237.49,No,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00303,2026-08-30,PAY-07,Imaging,Routine Imaging,541.93,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00304,2026-08-23,PAY-06,Behavioral Health,Therapy Session,193.4,No,Yes,Yes,No,No,5,Not Submitted
+CLM-2026-P00305,2026-08-28,PAY-03,Imaging,Advanced Imaging,2196.76,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00306,2026-08-21,PAY-07,Imaging,Routine Imaging,547.31,No,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00307,2026-08-24,PAY-07,Cardiology,Diagnostic Cardiology,1480.99,Yes,Yes,Yes,Yes,Yes,20,Not Submitted
+CLM-2026-P00308,2026-08-24,PAY-06,Surgery,Inpatient Surgery,25316.69,Yes,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00309,2026-09-02,PAY-02,Surgery,Outpatient Surgery,6428.64,Yes,No,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00310,2026-08-23,PAY-04,Imaging,Advanced Imaging,2429.25,Yes,Yes,Yes,Yes,Yes,20,Not Submitted
+CLM-2026-P00311,2026-08-27,PAY-01,Orthopedics,Joint Injection,1068.85,Yes,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00312,2026-09-01,PAY-03,Primary Care,Office Visit,156.81,No,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00313,2026-08-28,PAY-02,Primary Care,Office Visit,123.96,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00314,2026-09-03,PAY-05,Physical Therapy,PT Course,267.58,Yes,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00315,2026-08-27,PAY-02,Behavioral Health,Therapy Session,155.3,No,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00316,2026-08-21,PAY-01,Primary Care,Office Visit,214.89,No,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00317,2026-08-29,PAY-03,Behavioral Health,Therapy Session,287.74,No,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00318,2026-09-02,PAY-03,Imaging,Routine Imaging,327.0,No,Yes,Yes,Yes,No,28,Not Submitted
+CLM-2026-P00319,2026-08-25,PAY-02,Imaging,Advanced Imaging,1781.4,Yes,Yes,Yes,Yes,No,17,Not Submitted
+CLM-2026-P00320,2026-08-30,PAY-04,Primary Care,Office Visit,275.95,No,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00321,2026-08-29,PAY-07,Surgery,Outpatient Surgery,5558.49,Yes,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00322,2026-08-31,PAY-07,Primary Care,Office Visit,201.07,No,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00323,2026-08-22,PAY-03,Primary Care,Office Visit,179.9,No,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00324,2026-08-31,PAY-03,Lab,Routine Lab,141.23,No,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00325,2026-08-24,PAY-04,Primary Care,Office Visit,236.32,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00326,2026-09-03,PAY-04,Imaging,Advanced Imaging,2078.51,Yes,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00327,2026-09-01,PAY-05,Lab,Routine Lab,171.19,No,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00328,2026-09-02,PAY-04,Physical Therapy,PT Course,382.97,Yes,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00329,2026-08-25,PAY-02,Physical Therapy,PT Course,334.08,Yes,No,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00330,2026-08-30,PAY-06,Primary Care,Office Visit,96.35,No,Yes,Yes,Yes,No,24,Not Submitted
+CLM-2026-P00331,2026-09-01,PAY-01,Cardiology,Diagnostic Cardiology,4033.29,Yes,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00332,2026-08-29,PAY-04,Primary Care,Office Visit,126.73,No,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00333,2026-08-31,PAY-04,Orthopedics,Joint Injection,885.79,Yes,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00334,2026-08-30,PAY-01,Cardiology,Diagnostic Cardiology,2065.51,Yes,No,No,Yes,Yes,7,Not Submitted
+CLM-2026-P00335,2026-08-25,PAY-04,Primary Care,Office Visit,232.63,No,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00336,2026-08-21,PAY-05,Primary Care,Office Visit,182.96,No,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00337,2026-08-26,PAY-01,Imaging,Advanced Imaging,1995.86,Yes,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00338,2026-08-27,PAY-01,Physical Therapy,PT Course,235.0,Yes,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00339,2026-08-29,PAY-06,Lab,Routine Lab,115.03,No,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00340,2026-08-29,PAY-02,Orthopedics,Joint Injection,1128.43,Yes,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00341,2026-08-26,PAY-04,Imaging,Advanced Imaging,1978.15,Yes,Yes,Yes,No,Yes,7,Not Submitted
+CLM-2026-P00342,2026-08-22,PAY-01,Primary Care,Office Visit,198.18,No,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00343,2026-09-02,PAY-03,Cardiology,Diagnostic Cardiology,2456.68,Yes,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00344,2026-09-01,PAY-01,Primary Care,Office Visit,112.49,No,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00345,2026-08-28,PAY-03,Orthopedics,Joint Injection,1614.76,Yes,No,Yes,Yes,Yes,20,Not Submitted
+CLM-2026-P00346,2026-08-24,PAY-05,Cardiology,Diagnostic Cardiology,1408.4,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00347,2026-09-03,PAY-05,Behavioral Health,Therapy Session,234.47,No,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00348,2026-08-26,PAY-04,Oncology,Infusion Therapy,8270.43,Yes,Yes,No,Yes,Yes,21,Not Submitted
+CLM-2026-P00349,2026-08-22,PAY-03,Primary Care,Office Visit,102.26,No,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00350,2026-08-31,PAY-03,Imaging,Routine Imaging,778.2,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00351,2026-08-21,PAY-01,Primary Care,Office Visit,120.11,No,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00352,2026-08-31,PAY-01,Orthopedics,Joint Injection,668.32,Yes,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00353,2026-08-25,PAY-03,Lab,Routine Lab,146.8,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00354,2026-08-23,PAY-01,Lab,Routine Lab,117.29,No,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00355,2026-08-29,PAY-03,Primary Care,Office Visit,168.87,No,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00356,2026-08-28,PAY-04,Behavioral Health,Therapy Session,202.98,No,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00357,2026-09-03,PAY-07,Oncology,Infusion Therapy,11352.71,Yes,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00358,2026-09-02,PAY-06,Primary Care,Office Visit,119.06,No,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00359,2026-09-01,PAY-01,Orthopedics,Joint Injection,863.84,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00360,2026-08-28,PAY-02,Imaging,Advanced Imaging,2417.02,Yes,Yes,Yes,Yes,No,13,Not Submitted
+CLM-2026-P00361,2026-08-22,PAY-06,Physical Therapy,PT Course,500.56,Yes,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00362,2026-08-24,PAY-03,Imaging,Advanced Imaging,2400.84,Yes,No,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00363,2026-08-29,PAY-05,Behavioral Health,Therapy Session,284.12,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00364,2026-09-01,PAY-04,Imaging,Advanced Imaging,1205.82,Yes,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00365,2026-08-24,PAY-02,Surgery,Outpatient Surgery,8296.13,Yes,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00366,2026-08-25,PAY-03,Orthopedics,Joint Injection,1023.93,Yes,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00367,2026-08-26,PAY-02,Imaging,Routine Imaging,275.14,No,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00368,2026-08-30,PAY-02,Surgery,Outpatient Surgery,8048.55,Yes,Yes,Yes,No,Yes,4,Not Submitted
+CLM-2026-P00369,2026-08-21,PAY-04,Primary Care,Office Visit,201.99,No,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00370,2026-08-31,PAY-02,Lab,Routine Lab,101.91,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00371,2026-08-29,PAY-05,Orthopedics,Joint Injection,1897.1,Yes,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00372,2026-08-25,PAY-01,Primary Care,Office Visit,195.03,No,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00373,2026-08-29,PAY-02,Primary Care,Office Visit,259.43,No,Yes,No,Yes,Yes,1,Not Submitted
+CLM-2026-P00374,2026-08-28,PAY-03,Cardiology,Diagnostic Cardiology,1982.86,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00375,2026-08-29,PAY-06,Lab,Routine Lab,105.9,No,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00376,2026-08-28,PAY-05,Surgery,Inpatient Surgery,16083.09,Yes,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00377,2026-08-31,PAY-04,Imaging,Advanced Imaging,1682.18,Yes,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00378,2026-08-31,PAY-01,Behavioral Health,Therapy Session,190.12,No,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00379,2026-08-25,PAY-03,Surgery,Outpatient Surgery,11418.19,Yes,No,Yes,No,Yes,2,Not Submitted
+CLM-2026-P00380,2026-09-03,PAY-04,Cardiology,Diagnostic Cardiology,2304.23,Yes,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00381,2026-08-26,PAY-01,Imaging,Advanced Imaging,2250.12,Yes,No,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00382,2026-08-26,PAY-05,Physical Therapy,PT Course,143.49,Yes,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00383,2026-08-30,PAY-03,Primary Care,Office Visit,201.8,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00384,2026-08-28,PAY-04,Physical Therapy,PT Course,469.5,Yes,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00385,2026-08-25,PAY-05,Lab,Routine Lab,78.38,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00386,2026-08-25,PAY-01,Behavioral Health,Therapy Session,339.31,No,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00387,2026-09-02,PAY-01,Orthopedics,Joint Injection,1241.98,Yes,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00388,2026-08-28,PAY-04,Orthopedics,Joint Injection,830.13,Yes,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00389,2026-08-31,PAY-02,Primary Care,Office Visit,187.8,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00390,2026-09-02,PAY-01,Orthopedics,Joint Injection,945.65,Yes,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00391,2026-08-27,PAY-02,Orthopedics,Joint Injection,1612.9,Yes,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00392,2026-09-01,PAY-03,Lab,Routine Lab,135.22,No,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00393,2026-09-03,PAY-03,Imaging,Advanced Imaging,1717.71,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00394,2026-08-31,PAY-07,Orthopedics,Joint Injection,1619.56,Yes,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00395,2026-09-02,PAY-05,Surgery,Outpatient Surgery,4898.36,Yes,Yes,Yes,No,Yes,27,Not Submitted
+CLM-2026-P00396,2026-08-30,PAY-02,Orthopedics,Joint Injection,468.87,Yes,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00397,2026-08-22,PAY-04,Primary Care,Office Visit,118.76,No,Yes,No,Yes,Yes,24,Not Submitted
+CLM-2026-P00398,2026-09-02,PAY-06,Lab,Routine Lab,89.06,No,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00399,2026-08-30,PAY-04,Primary Care,Office Visit,277.21,No,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00400,2026-08-26,PAY-02,Primary Care,Office Visit,109.64,No,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00401,2026-08-21,PAY-04,Primary Care,Office Visit,288.5,No,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00402,2026-08-24,PAY-04,Oncology,Infusion Therapy,7233.46,Yes,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00403,2026-08-22,PAY-05,Lab,Routine Lab,94.89,No,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00404,2026-08-26,PAY-05,Primary Care,Office Visit,154.14,No,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00405,2026-08-29,PAY-05,Imaging,Routine Imaging,415.82,No,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00406,2026-08-22,PAY-04,Surgery,Inpatient Surgery,33120.45,Yes,Yes,Yes,Yes,No,26,Not Submitted
+CLM-2026-P00407,2026-08-22,PAY-04,Surgery,Outpatient Surgery,8353.04,Yes,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00408,2026-08-22,PAY-06,Imaging,Advanced Imaging,1818.51,Yes,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00409,2026-08-26,PAY-06,Imaging,Advanced Imaging,1244.18,Yes,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00410,2026-08-22,PAY-06,Primary Care,Office Visit,158.38,No,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00411,2026-09-03,PAY-03,Imaging,Advanced Imaging,1601.34,Yes,Yes,No,Yes,Yes,27,Not Submitted
+CLM-2026-P00412,2026-08-26,PAY-03,Orthopedics,Joint Injection,1091.33,Yes,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00413,2026-09-02,PAY-05,Primary Care,Office Visit,214.01,No,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00414,2026-08-28,PAY-06,Cardiology,Diagnostic Cardiology,2233.98,Yes,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00415,2026-08-21,PAY-01,Primary Care,Office Visit,130.22,No,Yes,Yes,No,Yes,16,Not Submitted
+CLM-2026-P00416,2026-08-24,PAY-01,Imaging,Advanced Imaging,1207.03,Yes,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00417,2026-09-01,PAY-03,Lab,Routine Lab,55.55,No,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00418,2026-08-22,PAY-06,Primary Care,Office Visit,274.9,No,Yes,No,Yes,Yes,13,Not Submitted
+CLM-2026-P00419,2026-08-23,PAY-03,Primary Care,Office Visit,152.58,No,Yes,Yes,Yes,No,3,Not Submitted
+CLM-2026-P00420,2026-08-21,PAY-01,Surgery,Outpatient Surgery,5695.95,Yes,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00421,2026-08-28,PAY-05,Surgery,Inpatient Surgery,32585.89,Yes,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00422,2026-09-01,PAY-07,Imaging,Advanced Imaging,3086.67,Yes,Yes,No,Yes,Yes,14,Not Submitted
+CLM-2026-P00423,2026-09-02,PAY-03,Physical Therapy,PT Course,310.29,Yes,No,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00424,2026-08-21,PAY-03,Imaging,Advanced Imaging,1180.42,Yes,Yes,No,Yes,Yes,15,Not Submitted
+CLM-2026-P00425,2026-08-27,PAY-01,Physical Therapy,PT Course,185.71,Yes,No,No,Yes,Yes,16,Not Submitted
+CLM-2026-P00426,2026-08-26,PAY-05,Surgery,Outpatient Surgery,9756.91,Yes,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00427,2026-08-22,PAY-07,Behavioral Health,Therapy Session,295.18,No,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00428,2026-09-02,PAY-04,Orthopedics,Joint Injection,1326.64,Yes,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00429,2026-08-22,PAY-07,Imaging,Routine Imaging,231.9,No,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00430,2026-08-28,PAY-05,Cardiology,Diagnostic Cardiology,1963.63,Yes,Yes,Yes,Yes,No,13,Not Submitted
+CLM-2026-P00431,2026-08-29,PAY-06,Surgery,Outpatient Surgery,9932.72,Yes,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00432,2026-08-24,PAY-04,Primary Care,Office Visit,127.08,No,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00433,2026-08-21,PAY-05,Physical Therapy,PT Course,259.21,Yes,Yes,Yes,Yes,No,24,Not Submitted
+CLM-2026-P00434,2026-08-28,PAY-07,Primary Care,Office Visit,144.12,No,Yes,No,Yes,Yes,25,Not Submitted
+CLM-2026-P00435,2026-08-29,PAY-03,Imaging,Advanced Imaging,3767.34,Yes,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00436,2026-08-25,PAY-04,Physical Therapy,PT Course,244.3,Yes,No,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00437,2026-08-28,PAY-04,Imaging,Advanced Imaging,1417.64,Yes,No,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00438,2026-08-22,PAY-03,Imaging,Routine Imaging,178.12,No,Yes,Yes,No,Yes,1,Not Submitted
+CLM-2026-P00439,2026-09-01,PAY-04,Imaging,Advanced Imaging,1282.48,Yes,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00440,2026-08-30,PAY-02,Oncology,Infusion Therapy,12554.8,Yes,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00441,2026-08-25,PAY-05,Imaging,Advanced Imaging,1830.62,Yes,Yes,No,Yes,Yes,27,Not Submitted
+CLM-2026-P00442,2026-08-27,PAY-01,Surgery,Outpatient Surgery,8551.86,Yes,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00443,2026-08-28,PAY-03,Physical Therapy,PT Course,258.83,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00444,2026-09-01,PAY-02,Cardiology,Diagnostic Cardiology,2517.67,Yes,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00445,2026-08-26,PAY-06,Behavioral Health,Therapy Session,667.9,No,Yes,Yes,No,Yes,15,Not Submitted
+CLM-2026-P00446,2026-08-21,PAY-03,Primary Care,Office Visit,189.46,No,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00447,2026-08-23,PAY-05,Lab,Routine Lab,124.2,No,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00448,2026-09-03,PAY-01,Orthopedics,Joint Injection,1126.78,Yes,No,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00449,2026-08-27,PAY-01,Physical Therapy,PT Course,341.4,Yes,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00450,2026-08-25,PAY-04,Cardiology,Diagnostic Cardiology,1026.84,Yes,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00451,2026-08-25,PAY-05,Oncology,Infusion Therapy,14731.48,Yes,Yes,Yes,Yes,No,19,Not Submitted
+CLM-2026-P00452,2026-08-24,PAY-02,Surgery,Outpatient Surgery,11840.95,Yes,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00453,2026-09-03,PAY-01,Orthopedics,Joint Injection,792.41,Yes,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00454,2026-08-23,PAY-02,Imaging,Routine Imaging,205.57,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00455,2026-08-30,PAY-05,Cardiology,Diagnostic Cardiology,3839.58,Yes,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00456,2026-08-31,PAY-04,Imaging,Routine Imaging,467.35,No,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00457,2026-08-27,PAY-02,Oncology,Infusion Therapy,4882.28,Yes,No,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00458,2026-08-31,PAY-02,Lab,Routine Lab,63.85,No,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00459,2026-08-27,PAY-01,Surgery,Outpatient Surgery,10625.55,Yes,Yes,Yes,Yes,No,7,Not Submitted
+CLM-2026-P00460,2026-08-30,PAY-05,Behavioral Health,Therapy Session,188.36,No,Yes,Yes,Yes,No,2,Not Submitted
+CLM-2026-P00461,2026-08-24,PAY-03,Oncology,Infusion Therapy,7752.24,Yes,Yes,No,Yes,Yes,19,Not Submitted
+CLM-2026-P00462,2026-09-02,PAY-06,Primary Care,Office Visit,230.71,No,Yes,No,Yes,Yes,13,Not Submitted
+CLM-2026-P00463,2026-08-27,PAY-03,Orthopedics,Joint Injection,983.99,Yes,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00464,2026-08-22,PAY-07,Imaging,Routine Imaging,373.38,No,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00465,2026-08-25,PAY-02,Lab,Routine Lab,96.73,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00466,2026-08-22,PAY-06,Orthopedics,Joint Injection,947.57,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00467,2026-08-30,PAY-01,Oncology,Infusion Therapy,12079.14,Yes,Yes,Yes,Yes,No,11,Not Submitted
+CLM-2026-P00468,2026-08-25,PAY-04,Imaging,Routine Imaging,339.14,No,Yes,No,Yes,Yes,24,Not Submitted
+CLM-2026-P00469,2026-08-31,PAY-02,Surgery,Outpatient Surgery,5415.98,Yes,No,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00470,2026-08-21,PAY-06,Orthopedics,Joint Injection,466.69,Yes,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00471,2026-08-29,PAY-01,Behavioral Health,Therapy Session,231.15,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00472,2026-08-28,PAY-03,Lab,Routine Lab,73.77,No,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00473,2026-08-25,PAY-05,Imaging,Advanced Imaging,2281.39,Yes,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00474,2026-08-30,PAY-02,Primary Care,Office Visit,220.28,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00475,2026-08-27,PAY-05,Imaging,Routine Imaging,391.28,No,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00476,2026-08-25,PAY-03,Cardiology,Diagnostic Cardiology,2551.12,Yes,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00477,2026-08-29,PAY-05,Primary Care,Office Visit,248.91,No,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00478,2026-08-25,PAY-01,Primary Care,Office Visit,162.47,No,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00479,2026-08-26,PAY-06,Primary Care,Office Visit,189.43,No,Yes,No,Yes,Yes,5,Not Submitted
+CLM-2026-P00480,2026-08-23,PAY-01,Imaging,Advanced Imaging,2621.8,Yes,No,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00481,2026-09-02,PAY-07,Physical Therapy,PT Course,239.23,Yes,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00482,2026-08-26,PAY-04,Imaging,Advanced Imaging,1264.44,Yes,Yes,Yes,No,Yes,20,Not Submitted
+CLM-2026-P00483,2026-08-26,PAY-07,Oncology,Infusion Therapy,5655.02,Yes,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00484,2026-09-03,PAY-01,Cardiology,Diagnostic Cardiology,3726.89,Yes,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00485,2026-08-23,PAY-07,Lab,Routine Lab,82.57,No,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00486,2026-08-30,PAY-04,Physical Therapy,PT Course,456.56,Yes,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00487,2026-09-01,PAY-05,Physical Therapy,PT Course,156.45,Yes,No,No,Yes,Yes,27,Not Submitted
+CLM-2026-P00488,2026-08-23,PAY-06,Cardiology,Diagnostic Cardiology,4876.32,Yes,No,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00489,2026-08-22,PAY-01,Oncology,Infusion Therapy,15550.05,Yes,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00490,2026-09-01,PAY-05,Lab,Routine Lab,123.38,No,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00491,2026-08-22,PAY-04,Imaging,Advanced Imaging,2822.04,Yes,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00492,2026-09-03,PAY-02,Surgery,Outpatient Surgery,5438.39,Yes,No,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00493,2026-08-27,PAY-03,Surgery,Inpatient Surgery,19525.18,Yes,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00494,2026-08-23,PAY-03,Imaging,Advanced Imaging,3763.07,Yes,No,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00495,2026-09-03,PAY-03,Behavioral Health,Therapy Session,163.44,No,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00496,2026-08-30,PAY-01,Cardiology,Diagnostic Cardiology,1628.59,Yes,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00497,2026-08-25,PAY-02,Imaging,Routine Imaging,357.98,No,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00498,2026-09-01,PAY-06,Primary Care,Office Visit,123.57,No,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00499,2026-08-31,PAY-04,Surgery,Inpatient Surgery,28179.2,Yes,No,No,Yes,Yes,21,Not Submitted
+CLM-2026-P00500,2026-08-28,PAY-01,Lab,Routine Lab,58.25,No,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00501,2026-08-28,PAY-06,Primary Care,Office Visit,175.69,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00502,2026-08-25,PAY-03,Surgery,Outpatient Surgery,7761.2,Yes,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00503,2026-08-28,PAY-01,Primary Care,Office Visit,252.78,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00504,2026-08-28,PAY-01,Imaging,Routine Imaging,309.5,No,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00505,2026-09-03,PAY-04,Imaging,Routine Imaging,456.78,No,Yes,Yes,No,Yes,22,Not Submitted
+CLM-2026-P00506,2026-08-24,PAY-03,Imaging,Advanced Imaging,1865.63,Yes,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00507,2026-09-03,PAY-07,Surgery,Outpatient Surgery,4871.29,Yes,Yes,No,Yes,Yes,7,Not Submitted
+CLM-2026-P00508,2026-09-02,PAY-01,Cardiology,Diagnostic Cardiology,4057.88,Yes,No,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00509,2026-08-27,PAY-01,Orthopedics,Joint Injection,883.57,Yes,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00510,2026-08-23,PAY-01,Lab,Routine Lab,64.76,No,Yes,No,Yes,Yes,31,Not Submitted
+CLM-2026-P00511,2026-08-26,PAY-03,Cardiology,Diagnostic Cardiology,1837.66,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00512,2026-08-21,PAY-01,Behavioral Health,Therapy Session,421.41,No,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00513,2026-08-26,PAY-05,Lab,Routine Lab,82.41,No,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00514,2026-08-29,PAY-03,Physical Therapy,PT Course,230.43,Yes,No,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00515,2026-08-22,PAY-02,Physical Therapy,PT Course,337.22,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00516,2026-09-03,PAY-01,Orthopedics,Joint Injection,905.4,Yes,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00517,2026-08-21,PAY-04,Primary Care,Office Visit,211.04,No,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00518,2026-08-22,PAY-02,Lab,Routine Lab,102.95,No,Yes,Yes,No,Yes,33,Not Submitted
+CLM-2026-P00519,2026-08-31,PAY-02,Behavioral Health,Therapy Session,178.77,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00520,2026-08-31,PAY-01,Primary Care,Office Visit,181.98,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00521,2026-08-21,PAY-04,Behavioral Health,Therapy Session,224.18,No,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00522,2026-08-30,PAY-04,Oncology,Infusion Therapy,9597.32,Yes,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00523,2026-08-24,PAY-03,Imaging,Advanced Imaging,1984.4,Yes,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00524,2026-08-29,PAY-03,Imaging,Routine Imaging,309.42,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00525,2026-08-31,PAY-05,Primary Care,Office Visit,179.46,No,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00526,2026-08-29,PAY-02,Surgery,Inpatient Surgery,27639.81,Yes,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00527,2026-08-25,PAY-05,Physical Therapy,PT Course,490.24,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00528,2026-08-28,PAY-05,Behavioral Health,Therapy Session,366.4,No,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00529,2026-08-28,PAY-02,Imaging,Routine Imaging,404.45,No,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00530,2026-08-22,PAY-04,Cardiology,Diagnostic Cardiology,2125.1,Yes,No,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00531,2026-08-25,PAY-04,Behavioral Health,Therapy Session,195.82,No,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00532,2026-08-24,PAY-04,Primary Care,Office Visit,308.74,No,Yes,No,Yes,Yes,17,Not Submitted
+CLM-2026-P00533,2026-08-28,PAY-07,Imaging,Advanced Imaging,1760.68,Yes,Yes,Yes,No,No,34,Not Submitted
+CLM-2026-P00534,2026-08-25,PAY-02,Behavioral Health,Therapy Session,268.49,No,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00535,2026-09-03,PAY-01,Primary Care,Office Visit,292.15,No,Yes,Yes,Yes,Yes,20,Not Submitted
+CLM-2026-P00536,2026-08-31,PAY-02,Behavioral Health,Therapy Session,291.97,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00537,2026-08-24,PAY-03,Cardiology,Diagnostic Cardiology,2927.47,Yes,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00538,2026-09-01,PAY-05,Lab,Routine Lab,106.98,No,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00539,2026-08-25,PAY-06,Imaging,Routine Imaging,520.98,No,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00540,2026-09-02,PAY-05,Surgery,Outpatient Surgery,8799.93,Yes,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00541,2026-08-30,PAY-04,Imaging,Routine Imaging,320.6,No,Yes,Yes,No,Yes,31,Not Submitted
+CLM-2026-P00542,2026-08-29,PAY-05,Cardiology,Diagnostic Cardiology,2230.09,Yes,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00543,2026-08-25,PAY-07,Orthopedics,Joint Injection,1049.54,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00544,2026-09-01,PAY-02,Surgery,Outpatient Surgery,4160.05,Yes,Yes,Yes,Yes,No,28,Not Submitted
+CLM-2026-P00545,2026-08-25,PAY-02,Imaging,Routine Imaging,724.6,No,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00546,2026-08-29,PAY-02,Behavioral Health,Therapy Session,166.2,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00547,2026-09-03,PAY-01,Imaging,Routine Imaging,655.4,No,Yes,No,Yes,Yes,21,Not Submitted
+CLM-2026-P00548,2026-08-21,PAY-01,Surgery,Outpatient Surgery,3982.02,Yes,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00549,2026-08-24,PAY-01,Lab,Routine Lab,67.49,No,Yes,Yes,Yes,No,18,Not Submitted
+CLM-2026-P00550,2026-08-29,PAY-04,Imaging,Advanced Imaging,2374.15,Yes,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00551,2026-08-28,PAY-01,Primary Care,Office Visit,191.86,No,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00552,2026-08-30,PAY-03,Behavioral Health,Therapy Session,127.35,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00553,2026-08-24,PAY-05,Surgery,Outpatient Surgery,11007.43,Yes,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00554,2026-08-29,PAY-01,Physical Therapy,PT Course,324.49,Yes,No,Yes,Yes,No,16,Not Submitted
+CLM-2026-P00555,2026-08-22,PAY-02,Physical Therapy,PT Course,206.76,Yes,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00556,2026-08-25,PAY-05,Behavioral Health,Therapy Session,285.11,No,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00557,2026-09-01,PAY-01,Surgery,Outpatient Surgery,10057.38,Yes,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00558,2026-08-28,PAY-02,Behavioral Health,Therapy Session,246.06,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00559,2026-08-25,PAY-07,Lab,Routine Lab,102.07,No,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00560,2026-08-25,PAY-03,Imaging,Routine Imaging,606.86,No,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00561,2026-08-22,PAY-04,Behavioral Health,Therapy Session,129.56,No,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00562,2026-08-25,PAY-05,Imaging,Routine Imaging,281.81,No,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00563,2026-08-21,PAY-01,Surgery,Outpatient Surgery,5896.8,Yes,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00564,2026-08-23,PAY-02,Primary Care,Office Visit,145.16,No,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00565,2026-08-28,PAY-06,Cardiology,Diagnostic Cardiology,2438.29,Yes,Yes,Yes,No,Yes,34,Not Submitted
+CLM-2026-P00566,2026-09-03,PAY-03,Behavioral Health,Therapy Session,134.61,No,Yes,No,Yes,No,14,Not Submitted
+CLM-2026-P00567,2026-08-24,PAY-04,Lab,Routine Lab,126.91,No,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00568,2026-08-28,PAY-02,Cardiology,Diagnostic Cardiology,2624.27,Yes,No,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00569,2026-08-22,PAY-04,Imaging,Advanced Imaging,2231.46,Yes,No,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00570,2026-08-28,PAY-04,Cardiology,Diagnostic Cardiology,2889.76,Yes,Yes,Yes,No,Yes,30,Not Submitted
+CLM-2026-P00571,2026-08-24,PAY-02,Imaging,Advanced Imaging,1660.21,Yes,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00572,2026-08-25,PAY-07,Primary Care,Office Visit,159.98,No,Yes,No,Yes,Yes,3,Not Submitted
+CLM-2026-P00573,2026-08-26,PAY-01,Primary Care,Office Visit,236.48,No,Yes,Yes,Yes,No,11,Not Submitted
+CLM-2026-P00574,2026-08-27,PAY-03,Cardiology,Diagnostic Cardiology,2926.76,Yes,No,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00575,2026-08-27,PAY-04,Orthopedics,Joint Injection,1410.93,Yes,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00576,2026-08-31,PAY-03,Primary Care,Office Visit,205.35,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00577,2026-08-21,PAY-07,Cardiology,Diagnostic Cardiology,2609.21,Yes,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00578,2026-09-02,PAY-04,Imaging,Routine Imaging,258.92,No,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00579,2026-08-30,PAY-05,Lab,Routine Lab,75.65,No,Yes,Yes,No,Yes,12,Not Submitted
+CLM-2026-P00580,2026-08-31,PAY-03,Imaging,Routine Imaging,346.77,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00581,2026-08-27,PAY-01,Behavioral Health,Therapy Session,286.23,No,Yes,No,Yes,Yes,27,Not Submitted
+CLM-2026-P00582,2026-08-31,PAY-03,Lab,Routine Lab,120.41,No,Yes,Yes,No,Yes,24,Not Submitted
+CLM-2026-P00583,2026-08-24,PAY-03,Surgery,Outpatient Surgery,8275.07,Yes,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00584,2026-08-22,PAY-02,Cardiology,Diagnostic Cardiology,1368.87,Yes,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00585,2026-08-21,PAY-04,Surgery,Inpatient Surgery,51959.38,Yes,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00586,2026-09-02,PAY-05,Imaging,Advanced Imaging,1390.54,Yes,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00587,2026-08-28,PAY-01,Surgery,Outpatient Surgery,7018.5,Yes,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00588,2026-08-21,PAY-05,Imaging,Advanced Imaging,1029.64,Yes,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00589,2026-09-02,PAY-02,Lab,Routine Lab,74.75,No,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00590,2026-08-22,PAY-05,Lab,Routine Lab,122.55,No,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00591,2026-08-29,PAY-04,Imaging,Routine Imaging,314.73,No,Yes,Yes,No,Yes,17,Not Submitted
+CLM-2026-P00592,2026-08-28,PAY-04,Primary Care,Office Visit,169.92,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00593,2026-08-27,PAY-01,Lab,Routine Lab,82.73,No,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00594,2026-08-28,PAY-05,Imaging,Routine Imaging,366.01,No,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00595,2026-09-01,PAY-04,Behavioral Health,Therapy Session,159.83,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00596,2026-08-31,PAY-04,Orthopedics,Joint Injection,919.13,Yes,Yes,Yes,Yes,No,29,Not Submitted
+CLM-2026-P00597,2026-08-27,PAY-06,Primary Care,Office Visit,140.8,No,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00598,2026-08-24,PAY-03,Primary Care,Office Visit,152.78,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00599,2026-08-31,PAY-04,Imaging,Advanced Imaging,2590.45,Yes,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00600,2026-08-26,PAY-07,Lab,Routine Lab,77.09,No,Yes,Yes,Yes,No,17,Not Submitted
+CLM-2026-P00601,2026-08-27,PAY-01,Surgery,Outpatient Surgery,9124.95,Yes,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00602,2026-08-31,PAY-02,Imaging,Routine Imaging,441.09,No,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00603,2026-09-02,PAY-01,Primary Care,Office Visit,157.42,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00604,2026-09-03,PAY-03,Imaging,Routine Imaging,317.06,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00605,2026-08-21,PAY-01,Oncology,Infusion Therapy,5989.4,Yes,No,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00606,2026-09-03,PAY-04,Surgery,Outpatient Surgery,10852.23,Yes,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00607,2026-08-22,PAY-03,Behavioral Health,Therapy Session,121.46,No,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00608,2026-08-31,PAY-05,Imaging,Routine Imaging,633.58,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00609,2026-08-24,PAY-07,Behavioral Health,Therapy Session,128.24,No,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00610,2026-08-25,PAY-02,Lab,Routine Lab,102.89,No,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00611,2026-08-27,PAY-03,Lab,Routine Lab,122.02,No,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00612,2026-08-30,PAY-03,Orthopedics,Joint Injection,586.22,Yes,Yes,Yes,No,Yes,21,Not Submitted
+CLM-2026-P00613,2026-08-31,PAY-04,Primary Care,Office Visit,279.58,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00614,2026-08-29,PAY-04,Physical Therapy,PT Course,468.2,Yes,No,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00615,2026-08-25,PAY-01,Imaging,Advanced Imaging,1682.66,Yes,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00616,2026-08-21,PAY-01,Imaging,Routine Imaging,135.4,No,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00617,2026-09-03,PAY-03,Imaging,Routine Imaging,216.7,No,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00618,2026-08-24,PAY-01,Primary Care,Office Visit,166.41,No,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00619,2026-08-30,PAY-03,Behavioral Health,Therapy Session,212.37,No,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00620,2026-08-21,PAY-02,Behavioral Health,Therapy Session,142.35,No,Yes,Yes,No,Yes,27,Not Submitted
+CLM-2026-P00621,2026-08-25,PAY-07,Surgery,Outpatient Surgery,11611.27,Yes,Yes,Yes,Yes,No,19,Not Submitted
+CLM-2026-P00622,2026-08-23,PAY-01,Physical Therapy,PT Course,497.37,Yes,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00623,2026-09-01,PAY-03,Primary Care,Office Visit,167.75,No,Yes,Yes,No,Yes,29,Not Submitted
+CLM-2026-P00624,2026-08-23,PAY-04,Primary Care,Office Visit,252.29,No,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00625,2026-09-02,PAY-07,Primary Care,Office Visit,308.59,No,Yes,No,No,Yes,30,Not Submitted
+CLM-2026-P00626,2026-08-31,PAY-01,Physical Therapy,PT Course,284.37,Yes,Yes,Yes,Yes,Yes,20,Not Submitted
+CLM-2026-P00627,2026-08-23,PAY-02,Physical Therapy,PT Course,458.42,Yes,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00628,2026-08-24,PAY-07,Lab,Routine Lab,205.64,No,Yes,Yes,No,Yes,30,Not Submitted
+CLM-2026-P00629,2026-08-25,PAY-02,Cardiology,Diagnostic Cardiology,2591.65,Yes,No,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00630,2026-08-21,PAY-06,Primary Care,Office Visit,226.97,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00631,2026-09-01,PAY-01,Surgery,Inpatient Surgery,9018.07,Yes,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00632,2026-08-27,PAY-01,Cardiology,Diagnostic Cardiology,3497.29,Yes,Yes,Yes,No,Yes,33,Not Submitted
+CLM-2026-P00633,2026-09-01,PAY-02,Physical Therapy,PT Course,284.26,Yes,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00634,2026-08-25,PAY-02,Imaging,Routine Imaging,869.11,No,Yes,No,No,Yes,19,Not Submitted
+CLM-2026-P00635,2026-08-25,PAY-01,Primary Care,Office Visit,116.75,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00636,2026-08-25,PAY-03,Cardiology,Diagnostic Cardiology,3975.24,Yes,No,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00637,2026-08-28,PAY-01,Primary Care,Office Visit,287.39,No,Yes,No,Yes,Yes,3,Not Submitted
+CLM-2026-P00638,2026-08-23,PAY-02,Cardiology,Diagnostic Cardiology,3694.81,Yes,Yes,Yes,Yes,No,1,Not Submitted
+CLM-2026-P00639,2026-08-30,PAY-03,Physical Therapy,PT Course,218.68,Yes,No,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00640,2026-08-21,PAY-03,Imaging,Routine Imaging,608.13,No,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00641,2026-08-25,PAY-05,Imaging,Advanced Imaging,1099.43,Yes,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00642,2026-09-02,PAY-03,Primary Care,Office Visit,164.33,No,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00643,2026-08-28,PAY-05,Surgery,Outpatient Surgery,5036.93,Yes,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00644,2026-09-02,PAY-02,Imaging,Advanced Imaging,1740.17,Yes,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00645,2026-09-03,PAY-05,Behavioral Health,Therapy Session,252.35,No,Yes,Yes,No,Yes,4,Not Submitted
+CLM-2026-P00646,2026-09-03,PAY-02,Imaging,Routine Imaging,487.8,No,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00647,2026-08-30,PAY-06,Imaging,Advanced Imaging,2706.39,Yes,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00648,2026-08-27,PAY-01,Primary Care,Office Visit,198.15,No,Yes,Yes,No,Yes,17,Not Submitted
+CLM-2026-P00649,2026-08-26,PAY-01,Orthopedics,Joint Injection,1609.77,Yes,No,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00650,2026-08-22,PAY-06,Imaging,Advanced Imaging,1401.57,Yes,Yes,Yes,No,Yes,27,Not Submitted
+CLM-2026-P00651,2026-08-28,PAY-01,Primary Care,Office Visit,147.43,No,Yes,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00652,2026-08-28,PAY-06,Imaging,Routine Imaging,772.03,No,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00653,2026-08-31,PAY-05,Cardiology,Diagnostic Cardiology,1521.32,Yes,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00654,2026-08-30,PAY-07,Behavioral Health,Therapy Session,265.66,No,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00655,2026-08-27,PAY-06,Primary Care,Office Visit,146.68,No,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00656,2026-08-30,PAY-01,Primary Care,Office Visit,247.98,No,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00657,2026-08-24,PAY-03,Oncology,Infusion Therapy,9458.38,Yes,No,Yes,No,Yes,10,Not Submitted
+CLM-2026-P00658,2026-08-25,PAY-05,Lab,Routine Lab,84.02,No,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00659,2026-08-25,PAY-03,Cardiology,Diagnostic Cardiology,2422.6,Yes,No,Yes,No,Yes,31,Not Submitted
+CLM-2026-P00660,2026-08-29,PAY-02,Primary Care,Office Visit,412.42,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00661,2026-08-27,PAY-05,Surgery,Outpatient Surgery,8240.58,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00662,2026-08-27,PAY-06,Lab,Routine Lab,73.44,No,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00663,2026-08-28,PAY-01,Primary Care,Office Visit,189.79,No,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00664,2026-08-25,PAY-05,Imaging,Advanced Imaging,2094.31,Yes,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00665,2026-08-27,PAY-01,Surgery,Outpatient Surgery,7505.39,Yes,Yes,No,Yes,Yes,17,Not Submitted
+CLM-2026-P00666,2026-09-03,PAY-05,Imaging,Routine Imaging,410.68,No,Yes,Yes,No,Yes,2,Not Submitted
+CLM-2026-P00667,2026-08-31,PAY-06,Primary Care,Office Visit,258.18,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00668,2026-08-25,PAY-05,Oncology,Infusion Therapy,10057.38,Yes,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00669,2026-08-25,PAY-05,Imaging,Advanced Imaging,4433.13,Yes,Yes,Yes,No,Yes,28,Not Submitted
+CLM-2026-P00670,2026-08-21,PAY-04,Cardiology,Diagnostic Cardiology,3318.49,Yes,Yes,No,Yes,Yes,5,Not Submitted
+CLM-2026-P00671,2026-08-23,PAY-05,Oncology,Infusion Therapy,9984.18,Yes,Yes,Yes,No,Yes,18,Not Submitted
+CLM-2026-P00672,2026-08-26,PAY-03,Primary Care,Office Visit,169.88,No,Yes,No,Yes,Yes,21,Not Submitted
+CLM-2026-P00673,2026-09-03,PAY-01,Primary Care,Office Visit,240.3,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00674,2026-08-25,PAY-01,Behavioral Health,Therapy Session,180.43,No,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00675,2026-08-31,PAY-02,Behavioral Health,Therapy Session,182.67,No,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00676,2026-08-29,PAY-04,Oncology,Infusion Therapy,7531.3,Yes,Yes,No,No,Yes,30,Not Submitted
+CLM-2026-P00677,2026-08-24,PAY-02,Imaging,Routine Imaging,515.85,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00678,2026-08-24,PAY-07,Behavioral Health,Therapy Session,166.59,No,Yes,Yes,No,No,4,Not Submitted
+CLM-2026-P00679,2026-08-28,PAY-01,Oncology,Infusion Therapy,7789.7,Yes,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00680,2026-09-01,PAY-05,Imaging,Advanced Imaging,3239.39,Yes,Yes,Yes,Yes,No,33,Not Submitted
+CLM-2026-P00681,2026-08-24,PAY-05,Physical Therapy,PT Course,478.83,Yes,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00682,2026-08-24,PAY-01,Behavioral Health,Therapy Session,121.16,No,Yes,Yes,No,Yes,5,Not Submitted
+CLM-2026-P00683,2026-08-22,PAY-06,Lab,Routine Lab,137.33,No,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00684,2026-08-26,PAY-01,Orthopedics,Joint Injection,928.25,Yes,No,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00685,2026-08-31,PAY-07,Physical Therapy,PT Course,668.86,Yes,Yes,No,Yes,Yes,34,Not Submitted
+CLM-2026-P00686,2026-08-23,PAY-01,Imaging,Advanced Imaging,628.56,Yes,No,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00687,2026-08-26,PAY-01,Behavioral Health,Therapy Session,421.76,No,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00688,2026-08-24,PAY-05,Imaging,Advanced Imaging,2309.31,Yes,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00689,2026-08-21,PAY-05,Primary Care,Office Visit,168.69,No,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00690,2026-08-31,PAY-07,Oncology,Infusion Therapy,11146.34,Yes,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00691,2026-08-26,PAY-02,Primary Care,Office Visit,180.42,No,Yes,Yes,No,Yes,5,Not Submitted
+CLM-2026-P00692,2026-09-02,PAY-01,Surgery,Inpatient Surgery,15562.44,Yes,No,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00693,2026-08-31,PAY-02,Surgery,Inpatient Surgery,14089.39,Yes,No,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00694,2026-08-30,PAY-05,Imaging,Routine Imaging,486.04,No,Yes,Yes,Yes,No,30,Not Submitted
+CLM-2026-P00695,2026-08-22,PAY-06,Lab,Routine Lab,117.9,No,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00696,2026-08-30,PAY-03,Oncology,Infusion Therapy,19080.48,Yes,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00697,2026-09-01,PAY-02,Primary Care,Office Visit,177.75,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00698,2026-09-02,PAY-03,Lab,Routine Lab,120.63,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00699,2026-08-21,PAY-04,Imaging,Routine Imaging,508.73,No,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00700,2026-08-29,PAY-03,Lab,Routine Lab,135.58,No,Yes,Yes,No,Yes,9,Not Submitted
+CLM-2026-P00701,2026-08-27,PAY-03,Behavioral Health,Therapy Session,162.5,No,Yes,No,Yes,Yes,20,Not Submitted
+CLM-2026-P00702,2026-08-22,PAY-06,Physical Therapy,PT Course,235.4,Yes,Yes,No,Yes,No,14,Not Submitted
+CLM-2026-P00703,2026-08-29,PAY-04,Physical Therapy,PT Course,365.33,Yes,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00704,2026-09-01,PAY-04,Surgery,Outpatient Surgery,6084.85,Yes,No,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00705,2026-08-31,PAY-02,Imaging,Routine Imaging,501.56,No,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00706,2026-08-29,PAY-01,Imaging,Routine Imaging,398.77,No,Yes,Yes,No,Yes,3,Not Submitted
+CLM-2026-P00707,2026-08-22,PAY-02,Cardiology,Diagnostic Cardiology,2917.49,Yes,Yes,No,Yes,Yes,6,Not Submitted
+CLM-2026-P00708,2026-08-22,PAY-04,Primary Care,Office Visit,109.76,No,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00709,2026-08-25,PAY-03,Imaging,Advanced Imaging,3102.68,Yes,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00710,2026-08-21,PAY-05,Cardiology,Diagnostic Cardiology,2974.48,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00711,2026-08-25,PAY-01,Primary Care,Office Visit,124.29,No,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00712,2026-08-30,PAY-03,Surgery,Outpatient Surgery,12959.87,Yes,Yes,No,No,Yes,20,Not Submitted
+CLM-2026-P00713,2026-08-29,PAY-02,Oncology,Infusion Therapy,4848.83,Yes,No,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00714,2026-08-27,PAY-02,Imaging,Routine Imaging,635.35,No,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00715,2026-08-25,PAY-03,Imaging,Routine Imaging,490.26,No,Yes,No,Yes,Yes,12,Not Submitted
+CLM-2026-P00716,2026-08-26,PAY-03,Imaging,Routine Imaging,434.37,No,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00717,2026-08-23,PAY-02,Primary Care,Office Visit,253.61,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00718,2026-08-26,PAY-03,Primary Care,Office Visit,130.76,No,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00719,2026-09-02,PAY-05,Primary Care,Office Visit,197.56,No,Yes,Yes,No,Yes,17,Not Submitted
+CLM-2026-P00720,2026-08-23,PAY-01,Primary Care,Office Visit,179.24,No,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00721,2026-09-02,PAY-05,Surgery,Outpatient Surgery,7098.41,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00722,2026-09-01,PAY-07,Behavioral Health,Therapy Session,170.58,No,Yes,Yes,No,Yes,33,Not Submitted
+CLM-2026-P00723,2026-08-21,PAY-03,Primary Care,Office Visit,178.35,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00724,2026-09-03,PAY-04,Imaging,Routine Imaging,517.39,No,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00725,2026-08-25,PAY-01,Lab,Routine Lab,70.15,No,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00726,2026-08-25,PAY-02,Orthopedics,Joint Injection,1041.25,Yes,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00727,2026-08-26,PAY-03,Imaging,Routine Imaging,467.82,No,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00728,2026-08-31,PAY-03,Cardiology,Diagnostic Cardiology,2905.21,Yes,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00729,2026-08-25,PAY-07,Oncology,Infusion Therapy,5489.8,Yes,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00730,2026-08-28,PAY-01,Orthopedics,Joint Injection,538.08,Yes,Yes,Yes,No,Yes,16,Not Submitted
+CLM-2026-P00731,2026-08-30,PAY-06,Physical Therapy,PT Course,215.78,Yes,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00732,2026-08-22,PAY-06,Lab,Routine Lab,77.76,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00733,2026-08-31,PAY-06,Primary Care,Office Visit,170.56,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00734,2026-08-31,PAY-06,Surgery,Inpatient Surgery,15821.27,Yes,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00735,2026-08-21,PAY-03,Primary Care,Office Visit,384.76,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00736,2026-08-29,PAY-03,Oncology,Infusion Therapy,7716.3,Yes,Yes,No,Yes,Yes,32,Not Submitted
+CLM-2026-P00737,2026-08-24,PAY-06,Imaging,Advanced Imaging,1856.06,Yes,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00738,2026-08-25,PAY-01,Lab,Routine Lab,39.52,No,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00739,2026-08-23,PAY-03,Imaging,Routine Imaging,556.52,No,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00740,2026-08-28,PAY-05,Imaging,Routine Imaging,638.35,No,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00741,2026-08-26,PAY-06,Primary Care,Office Visit,104.4,No,Yes,Yes,No,Yes,8,Not Submitted
+CLM-2026-P00742,2026-08-30,PAY-01,Primary Care,Office Visit,113.44,No,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00743,2026-08-30,PAY-02,Imaging,Routine Imaging,294.85,No,Yes,No,Yes,Yes,11,Not Submitted
+CLM-2026-P00744,2026-08-26,PAY-04,Surgery,Outpatient Surgery,11170.67,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00745,2026-08-27,PAY-01,Imaging,Routine Imaging,303.92,No,Yes,No,Yes,Yes,23,Not Submitted
+CLM-2026-P00746,2026-08-26,PAY-01,Imaging,Advanced Imaging,1773.87,Yes,Yes,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00747,2026-08-24,PAY-01,Imaging,Routine Imaging,350.81,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00748,2026-08-31,PAY-04,Imaging,Advanced Imaging,1656.33,Yes,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00749,2026-08-28,PAY-05,Orthopedics,Joint Injection,806.55,Yes,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00750,2026-08-22,PAY-02,Primary Care,Office Visit,165.57,No,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00751,2026-08-25,PAY-04,Lab,Routine Lab,74.55,No,Yes,No,Yes,Yes,26,Not Submitted
+CLM-2026-P00752,2026-09-02,PAY-06,Surgery,Outpatient Surgery,6724.67,Yes,Yes,No,Yes,No,27,Not Submitted
+CLM-2026-P00753,2026-08-28,PAY-02,Imaging,Routine Imaging,604.41,No,Yes,Yes,Yes,No,25,Not Submitted
+CLM-2026-P00754,2026-08-21,PAY-07,Imaging,Routine Imaging,293.77,No,Yes,No,Yes,Yes,0,Not Submitted
+CLM-2026-P00755,2026-08-27,PAY-04,Orthopedics,Joint Injection,1447.25,Yes,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00756,2026-08-24,PAY-04,Oncology,Infusion Therapy,11024.27,Yes,Yes,Yes,No,Yes,3,Not Submitted
+CLM-2026-P00757,2026-09-01,PAY-02,Physical Therapy,PT Course,216.9,Yes,Yes,Yes,Yes,No,22,Not Submitted
+CLM-2026-P00758,2026-08-22,PAY-07,Orthopedics,Joint Injection,710.01,Yes,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00759,2026-08-30,PAY-01,Lab,Routine Lab,111.03,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00760,2026-08-30,PAY-02,Surgery,Outpatient Surgery,8741.94,Yes,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00761,2026-08-25,PAY-05,Imaging,Advanced Imaging,1448.47,Yes,Yes,No,Yes,Yes,14,Not Submitted
+CLM-2026-P00762,2026-08-26,PAY-05,Surgery,Outpatient Surgery,7117.12,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00763,2026-09-03,PAY-07,Behavioral Health,Therapy Session,374.84,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00764,2026-08-31,PAY-02,Oncology,Infusion Therapy,19181.43,Yes,Yes,Yes,No,Yes,23,Not Submitted
+CLM-2026-P00765,2026-08-24,PAY-03,Lab,Routine Lab,148.33,No,Yes,Yes,No,Yes,31,Not Submitted
+CLM-2026-P00766,2026-09-01,PAY-04,Primary Care,Office Visit,142.43,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00767,2026-08-27,PAY-03,Primary Care,Office Visit,133.73,No,Yes,Yes,No,Yes,9,Not Submitted
+CLM-2026-P00768,2026-08-23,PAY-06,Cardiology,Diagnostic Cardiology,1926.97,Yes,No,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00769,2026-08-24,PAY-04,Lab,Routine Lab,148.73,No,Yes,Yes,No,Yes,24,Not Submitted
+CLM-2026-P00770,2026-08-31,PAY-07,Imaging,Advanced Imaging,1167.24,Yes,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00771,2026-08-31,PAY-05,Behavioral Health,Therapy Session,249.99,No,Yes,Yes,No,Yes,19,Not Submitted
+CLM-2026-P00772,2026-09-03,PAY-04,Physical Therapy,PT Course,220.68,Yes,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00773,2026-08-22,PAY-03,Imaging,Routine Imaging,232.74,No,Yes,Yes,No,No,28,Not Submitted
+CLM-2026-P00774,2026-08-29,PAY-05,Cardiology,Diagnostic Cardiology,3221.2,Yes,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00775,2026-09-01,PAY-04,Imaging,Routine Imaging,470.05,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00776,2026-08-21,PAY-04,Primary Care,Office Visit,162.33,No,Yes,No,Yes,Yes,15,Not Submitted
+CLM-2026-P00777,2026-08-25,PAY-03,Physical Therapy,PT Course,347.03,Yes,Yes,No,Yes,Yes,33,Not Submitted
+CLM-2026-P00778,2026-08-26,PAY-06,Oncology,Infusion Therapy,10971.94,Yes,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00779,2026-08-23,PAY-03,Primary Care,Office Visit,147.93,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00780,2026-08-29,PAY-01,Surgery,Inpatient Surgery,16099.76,Yes,No,Yes,No,Yes,18,Not Submitted
+CLM-2026-P00781,2026-08-27,PAY-02,Primary Care,Office Visit,202.74,No,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00782,2026-08-25,PAY-02,Lab,Routine Lab,107.94,No,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00783,2026-08-29,PAY-04,Surgery,Outpatient Surgery,7633.35,Yes,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00784,2026-08-26,PAY-06,Orthopedics,Joint Injection,1165.54,Yes,Yes,Yes,No,Yes,18,Not Submitted
+CLM-2026-P00785,2026-09-03,PAY-07,Primary Care,Office Visit,130.11,No,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00786,2026-09-02,PAY-02,Primary Care,Office Visit,80.42,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00787,2026-08-29,PAY-02,Cardiology,Diagnostic Cardiology,3160.74,Yes,No,Yes,Yes,Yes,32,Not Submitted
+CLM-2026-P00788,2026-08-24,PAY-06,Physical Therapy,PT Course,99.67,Yes,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00789,2026-09-01,PAY-06,Imaging,Advanced Imaging,1687.05,Yes,Yes,Yes,No,Yes,1,Not Submitted
+CLM-2026-P00790,2026-08-31,PAY-05,Lab,Routine Lab,187.57,No,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00791,2026-08-23,PAY-01,Surgery,Outpatient Surgery,7293.47,Yes,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00792,2026-08-26,PAY-01,Imaging,Advanced Imaging,1396.87,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00793,2026-09-03,PAY-05,Surgery,Outpatient Surgery,7174.85,Yes,Yes,Yes,No,Yes,7,Not Submitted
+CLM-2026-P00794,2026-09-03,PAY-05,Primary Care,Office Visit,239.65,No,Yes,Yes,Yes,No,16,Not Submitted
+CLM-2026-P00795,2026-08-21,PAY-06,Primary Care,Office Visit,261.61,No,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00796,2026-08-25,PAY-03,Behavioral Health,Therapy Session,279.26,No,Yes,Yes,Yes,Yes,15,Not Submitted
+CLM-2026-P00797,2026-08-29,PAY-02,Primary Care,Office Visit,75.56,No,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00798,2026-09-03,PAY-04,Behavioral Health,Therapy Session,258.61,No,Yes,Yes,Yes,Yes,23,Not Submitted
+CLM-2026-P00799,2026-09-01,PAY-04,Oncology,Infusion Therapy,11610.25,Yes,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00800,2026-08-29,PAY-05,Orthopedics,Joint Injection,1193.95,Yes,No,Yes,Yes,No,2,Not Submitted
+CLM-2026-P00801,2026-08-22,PAY-04,Lab,Routine Lab,65.32,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00802,2026-08-26,PAY-02,Behavioral Health,Therapy Session,334.06,No,Yes,No,Yes,Yes,20,Not Submitted
+CLM-2026-P00803,2026-08-29,PAY-04,Imaging,Routine Imaging,438.65,No,Yes,No,Yes,Yes,19,Not Submitted
+CLM-2026-P00804,2026-08-22,PAY-05,Oncology,Infusion Therapy,14521.25,Yes,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00805,2026-08-21,PAY-01,Imaging,Routine Imaging,427.87,No,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00806,2026-08-30,PAY-02,Primary Care,Office Visit,153.02,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00807,2026-08-31,PAY-07,Surgery,Outpatient Surgery,7945.17,Yes,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00808,2026-08-28,PAY-04,Surgery,Outpatient Surgery,10545.42,Yes,Yes,Yes,No,Yes,6,Not Submitted
+CLM-2026-P00809,2026-09-03,PAY-04,Physical Therapy,PT Course,344.14,Yes,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00810,2026-08-22,PAY-03,Primary Care,Office Visit,187.67,No,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00811,2026-08-29,PAY-02,Cardiology,Diagnostic Cardiology,1396.76,Yes,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00812,2026-08-29,PAY-03,Surgery,Outpatient Surgery,7283.84,Yes,No,Yes,No,No,0,Not Submitted
+CLM-2026-P00813,2026-08-27,PAY-05,Imaging,Routine Imaging,525.77,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00814,2026-08-24,PAY-04,Lab,Routine Lab,61.26,No,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00815,2026-09-02,PAY-02,Behavioral Health,Therapy Session,132.29,No,Yes,Yes,Yes,Yes,20,Not Submitted
+CLM-2026-P00816,2026-08-21,PAY-03,Cardiology,Diagnostic Cardiology,3060.36,Yes,Yes,Yes,Yes,Yes,17,Not Submitted
+CLM-2026-P00817,2026-09-03,PAY-01,Cardiology,Diagnostic Cardiology,1227.57,Yes,No,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00818,2026-08-24,PAY-01,Physical Therapy,PT Course,198.81,Yes,Yes,No,Yes,Yes,18,Not Submitted
+CLM-2026-P00819,2026-08-30,PAY-05,Primary Care,Office Visit,172.71,No,Yes,Yes,Yes,Yes,21,Not Submitted
+CLM-2026-P00820,2026-08-22,PAY-01,Primary Care,Office Visit,112.7,No,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00821,2026-08-25,PAY-07,Surgery,Outpatient Surgery,4792.9,Yes,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00822,2026-08-22,PAY-01,Imaging,Routine Imaging,739.37,No,Yes,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00823,2026-08-31,PAY-01,Primary Care,Office Visit,217.11,No,Yes,Yes,Yes,Yes,30,Not Submitted
+CLM-2026-P00824,2026-08-31,PAY-01,Imaging,Advanced Imaging,1655.34,Yes,Yes,Yes,No,Yes,19,Not Submitted
+CLM-2026-P00825,2026-08-21,PAY-03,Oncology,Infusion Therapy,6678.15,Yes,No,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00826,2026-09-01,PAY-01,Imaging,Routine Imaging,428.98,No,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00827,2026-08-29,PAY-03,Lab,Routine Lab,128.24,No,Yes,Yes,Yes,Yes,29,Not Submitted
+CLM-2026-P00828,2026-09-01,PAY-04,Imaging,Advanced Imaging,2123.97,Yes,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00829,2026-09-03,PAY-05,Surgery,Outpatient Surgery,12583.29,Yes,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00830,2026-09-01,PAY-03,Imaging,Advanced Imaging,1911.22,Yes,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00831,2026-09-02,PAY-07,Surgery,Outpatient Surgery,8535.56,Yes,No,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00832,2026-08-24,PAY-01,Surgery,Inpatient Surgery,29254.77,Yes,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00833,2026-08-25,PAY-03,Physical Therapy,PT Course,177.95,Yes,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00834,2026-08-28,PAY-02,Imaging,Advanced Imaging,1548.56,Yes,Yes,Yes,Yes,Yes,4,Not Submitted
+CLM-2026-P00835,2026-08-28,PAY-05,Imaging,Advanced Imaging,1024.48,Yes,No,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00836,2026-09-01,PAY-06,Oncology,Infusion Therapy,16901.81,Yes,No,Yes,Yes,No,20,Not Submitted
+CLM-2026-P00837,2026-08-26,PAY-04,Imaging,Routine Imaging,524.09,No,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00838,2026-09-03,PAY-07,Physical Therapy,PT Course,333.06,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00839,2026-08-30,PAY-06,Cardiology,Diagnostic Cardiology,2071.09,Yes,No,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00840,2026-09-01,PAY-03,Cardiology,Diagnostic Cardiology,2490.34,Yes,No,Yes,Yes,Yes,22,Not Submitted
+CLM-2026-P00841,2026-08-21,PAY-02,Cardiology,Diagnostic Cardiology,3635.4,Yes,Yes,Yes,No,Yes,26,Not Submitted
+CLM-2026-P00842,2026-08-23,PAY-01,Primary Care,Office Visit,140.87,No,Yes,Yes,Yes,Yes,8,Not Submitted
+CLM-2026-P00843,2026-09-02,PAY-05,Cardiology,Diagnostic Cardiology,2163.2,Yes,Yes,Yes,Yes,Yes,5,Not Submitted
+CLM-2026-P00844,2026-08-24,PAY-06,Orthopedics,Joint Injection,630.02,Yes,Yes,No,Yes,Yes,29,Not Submitted
+CLM-2026-P00845,2026-09-01,PAY-07,Oncology,Infusion Therapy,10305.06,Yes,Yes,Yes,Yes,Yes,6,Not Submitted
+CLM-2026-P00846,2026-09-01,PAY-06,Lab,Routine Lab,66.33,No,Yes,No,Yes,Yes,13,Not Submitted
+CLM-2026-P00847,2026-08-23,PAY-06,Imaging,Advanced Imaging,2586.0,Yes,Yes,Yes,Yes,No,4,Not Submitted
+CLM-2026-P00848,2026-08-28,PAY-01,Surgery,Inpatient Surgery,15066.86,Yes,No,Yes,Yes,Yes,18,Not Submitted
+CLM-2026-P00849,2026-09-03,PAY-01,Primary Care,Office Visit,180.84,No,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00850,2026-08-30,PAY-01,Behavioral Health,Therapy Session,156.51,No,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00851,2026-08-21,PAY-07,Imaging,Routine Imaging,629.55,No,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00852,2026-09-01,PAY-05,Behavioral Health,Therapy Session,227.09,No,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00853,2026-08-22,PAY-04,Orthopedics,Joint Injection,1275.44,Yes,Yes,Yes,No,Yes,5,Not Submitted
+CLM-2026-P00854,2026-08-23,PAY-05,Oncology,Infusion Therapy,13187.39,Yes,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00855,2026-08-25,PAY-01,Primary Care,Office Visit,262.87,No,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00856,2026-08-24,PAY-01,Cardiology,Diagnostic Cardiology,2924.9,Yes,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00857,2026-08-31,PAY-04,Oncology,Infusion Therapy,15567.47,Yes,Yes,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00858,2026-08-23,PAY-02,Physical Therapy,PT Course,346.7,Yes,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00859,2026-08-28,PAY-05,Imaging,Advanced Imaging,1854.15,Yes,Yes,Yes,Yes,Yes,3,Not Submitted
+CLM-2026-P00860,2026-09-01,PAY-06,Surgery,Outpatient Surgery,4331.04,Yes,No,Yes,Yes,Yes,1,Not Submitted
+CLM-2026-P00861,2026-08-27,PAY-01,Surgery,Outpatient Surgery,7400.48,Yes,Yes,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00862,2026-08-26,PAY-02,Imaging,Advanced Imaging,1293.84,Yes,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00863,2026-08-22,PAY-02,Behavioral Health,Therapy Session,157.43,No,Yes,Yes,Yes,Yes,28,Not Submitted
+CLM-2026-P00864,2026-08-23,PAY-04,Imaging,Advanced Imaging,1618.25,Yes,Yes,No,Yes,Yes,28,Not Submitted
+CLM-2026-P00865,2026-08-21,PAY-01,Imaging,Advanced Imaging,1174.81,Yes,No,Yes,Yes,Yes,9,Not Submitted
+CLM-2026-P00866,2026-09-03,PAY-07,Lab,Routine Lab,77.58,No,Yes,Yes,No,Yes,29,Not Submitted
+CLM-2026-P00867,2026-08-22,PAY-05,Imaging,Routine Imaging,609.64,No,Yes,No,Yes,No,30,Not Submitted
+CLM-2026-P00868,2026-08-22,PAY-02,Orthopedics,Joint Injection,1123.28,Yes,Yes,Yes,Yes,Yes,19,Not Submitted
+CLM-2026-P00869,2026-09-02,PAY-05,Behavioral Health,Therapy Session,151.28,No,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00870,2026-09-02,PAY-03,Imaging,Advanced Imaging,2588.48,Yes,Yes,No,Yes,Yes,17,Not Submitted
+CLM-2026-P00871,2026-08-30,PAY-01,Imaging,Routine Imaging,200.61,No,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00872,2026-08-23,PAY-03,Imaging,Advanced Imaging,1092.25,Yes,Yes,Yes,Yes,Yes,2,Not Submitted
+CLM-2026-P00873,2026-08-21,PAY-05,Surgery,Outpatient Surgery,14685.98,Yes,Yes,Yes,Yes,Yes,0,Not Submitted
+CLM-2026-P00874,2026-08-26,PAY-03,Primary Care,Office Visit,317.82,No,Yes,Yes,Yes,Yes,34,Not Submitted
+CLM-2026-P00875,2026-09-03,PAY-03,Surgery,Outpatient Surgery,8258.9,Yes,Yes,Yes,Yes,Yes,16,Not Submitted
+CLM-2026-P00876,2026-09-03,PAY-06,Imaging,Routine Imaging,216.76,No,Yes,Yes,Yes,Yes,12,Not Submitted
+CLM-2026-P00877,2026-09-01,PAY-02,Primary Care,Office Visit,90.09,No,Yes,No,Yes,Yes,19,Not Submitted
+CLM-2026-P00878,2026-09-03,PAY-05,Cardiology,Diagnostic Cardiology,1932.96,Yes,Yes,Yes,Yes,No,0,Not Submitted
+CLM-2026-P00879,2026-08-27,PAY-05,Imaging,Routine Imaging,250.88,No,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00880,2026-08-25,PAY-01,Oncology,Infusion Therapy,11957.29,Yes,Yes,Yes,Yes,Yes,33,Not Submitted
+CLM-2026-P00881,2026-08-26,PAY-03,Surgery,Outpatient Surgery,9218.67,Yes,Yes,No,Yes,Yes,21,Not Submitted
+CLM-2026-P00882,2026-08-30,PAY-01,Physical Therapy,PT Course,335.05,Yes,Yes,Yes,Yes,Yes,11,Not Submitted
+CLM-2026-P00883,2026-08-29,PAY-01,Imaging,Advanced Imaging,1714.77,Yes,Yes,Yes,Yes,Yes,24,Not Submitted
+CLM-2026-P00884,2026-08-29,PAY-03,Behavioral Health,Therapy Session,157.29,No,Yes,No,Yes,Yes,18,Not Submitted
+CLM-2026-P00885,2026-08-25,PAY-04,Lab,Routine Lab,64.15,No,Yes,Yes,Yes,Yes,10,Not Submitted
+CLM-2026-P00886,2026-09-01,PAY-06,Primary Care,Office Visit,260.01,No,Yes,Yes,No,Yes,20,Not Submitted
+CLM-2026-P00887,2026-09-03,PAY-04,Imaging,Routine Imaging,221.94,No,Yes,No,Yes,Yes,28,Not Submitted
+CLM-2026-P00888,2026-08-21,PAY-03,Lab,Routine Lab,89.57,No,Yes,Yes,Yes,No,22,Not Submitted
+CLM-2026-P00889,2026-08-23,PAY-03,Behavioral Health,Therapy Session,224.7,No,Yes,Yes,Yes,No,22,Not Submitted
+CLM-2026-P00890,2026-08-23,PAY-04,Primary Care,Office Visit,215.45,No,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00891,2026-08-26,PAY-01,Orthopedics,Joint Injection,1107.55,Yes,Yes,Yes,Yes,Yes,31,Not Submitted
+CLM-2026-P00892,2026-08-23,PAY-06,Primary Care,Office Visit,327.64,No,Yes,Yes,Yes,Yes,26,Not Submitted
+CLM-2026-P00893,2026-08-24,PAY-07,Imaging,Routine Imaging,980.35,No,Yes,No,Yes,Yes,3,Not Submitted
+CLM-2026-P00894,2026-09-02,PAY-05,Imaging,Routine Imaging,316.97,No,Yes,Yes,Yes,Yes,13,Not Submitted
+CLM-2026-P00895,2026-08-27,PAY-03,Orthopedics,Joint Injection,729.88,Yes,Yes,Yes,Yes,Yes,25,Not Submitted
+CLM-2026-P00896,2026-08-21,PAY-03,Surgery,Outpatient Surgery,11538.31,Yes,Yes,Yes,Yes,Yes,14,Not Submitted
+CLM-2026-P00897,2026-08-22,PAY-05,Behavioral Health,Therapy Session,435.36,No,Yes,Yes,No,Yes,31,Not Submitted
+CLM-2026-P00898,2026-08-29,PAY-01,Behavioral Health,Therapy Session,183.77,No,Yes,Yes,Yes,Yes,27,Not Submitted
+CLM-2026-P00899,2026-08-23,PAY-07,Primary Care,Office Visit,254.06,No,Yes,Yes,Yes,Yes,7,Not Submitted
+CLM-2026-P00900,2026-08-21,PAY-03,Imaging,Advanced Imaging,2641.73,Yes,No,Yes,Yes,Yes,23,Not Submitted
